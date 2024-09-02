@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  /* font-family: "Shippori Mincho", serif; */
+  font-family: "Cabin", sans-serif;
+}
+
+body{
+  background: #1a1f16;
+  color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+h3 {
+  color: #d4bf79;
+  font-family: "Shippori Mincho", serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: xx-large;
+  margin-bottom: 50px;
+}

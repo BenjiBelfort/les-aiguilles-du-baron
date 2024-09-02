@@ -1,0 +1,158 @@
+.navbar {
+    height: 6rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); /* couleur de fond légèrement transparente */
+  }
+
+.navbar-container {
+    height: 6rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+h1 {
+    color: #d4bf79;
+    font-family: "Shippori Mincho", serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #d4bf79;
+    font-family: "Shippori Mincho", serif;
+    text-transform: uppercase;
+    font-size: small;
+    letter-spacing: 2px;
+}
+
+.desktopmenutitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desktopMenuListItem {
+    margin: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* font-family: "Shippori Mincho", serif; */
+}
+.desktopMenuListItem:hover {
+    color: #d4bf79;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #d4bf79;
+}
+
+.active {
+    color: #d4bf79;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #d4bf79;
+}
+
+.desktopMenuBtn {
+    background: #fff;
+    height: 21px;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem 0 0;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-family: "Shippori Mincho", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.desktopMenuImg {
+    object-fit: cover;
+    width: 2rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    transform: translateX(-5px);
+}
+
+.mobMenu {
+    height: 2.5rem;
+    display: none;
+    object-fit: cover;
+}
+
+.navMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height:  fit-content;
+    min-width: 15rem;
+    background: rgb(40,40,40);
+    border-radius: 1rem;
+}
+
+.ListItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30,30,30);
+}
+
+@media screen and (max-width:950px) {
+    h1 {
+        font-size: medium;
+    }
+
+    h2 {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .mobMenu {
+        display: flex;
+    }
+
+    .desktopmenu {
+        display: none;
+    }
+
+    .desktopMenuBtn {
+        display: none;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: small;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: medium;
+    }
+
+    h2 {
+        font-size: x-small;
+    }
+}

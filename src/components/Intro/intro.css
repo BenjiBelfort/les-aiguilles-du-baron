@@ -1,0 +1,20 @@
+#Intro {
+    max-width: 75rem;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+.introText {
+    padding: 0 2rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.goldText {
+    color: #d4bf79;
+    font-weight: bold;
+    font-family: "Shippori Mincho", serif;
+    text-transform: uppercase;
+}
