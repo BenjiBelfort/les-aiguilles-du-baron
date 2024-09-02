@@ -52,15 +52,16 @@
     border-radius: 8px;
 }
 
-@media (max-width: 1050px) {
+@media screen and  (max-width: 1050px) {
     .gallery-container {
       grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 750px) {
+@media screen and  (max-width: 750px) {
     .photo-thumbnail {
-      width: 400px;
-      height: 400px;
+        width: calc(100vw - 30px);
+        height: 100vw;
+
     }
 }

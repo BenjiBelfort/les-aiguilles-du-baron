@@ -95,14 +95,14 @@ h2 {
 
 .navMenu {
     position: absolute;
-    top: 4rem;
+    top: 5rem;
     right: 2rem;
     z-index: 2;
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
     height:  fit-content;
-    min-width: 15rem;
+    min-width: 20rem;
     background: rgb(40,40,40);
     border-radius: 1rem;
 }
@@ -137,22 +137,17 @@ h2 {
         display: none;
     }
 
-    h1 {
-        font-size: x-large;
+    .navbar {
+        height: 5rem;
     }
 
-    h2 {
-        font-size: small;
+    .navbar-container {
+        height: 5rem;
     }
-
 }
 
-@media screen and (max-width:500px) {
-    h1 {
-        font-size: medium;
-    }
-
+@media screen and (max-width:375px) {
     h2 {
-        font-size: x-small;
+        display: none;
     }
 }

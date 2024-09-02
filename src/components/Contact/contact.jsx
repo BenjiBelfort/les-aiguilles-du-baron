@@ -34,12 +34,14 @@ const Contact = () => {
     <section id='Contact'>
         <div className='contact-wrapper'>
             <h3 className='contact-title'>Contact</h3>
-            <p className='contact-description'>03 63 14 69 99</p>
+            <p className='contact-description'>
+              <a href="tel:+33363146999" className="phone-link">03 63 14 69 99</a>
+            </p>
             <p className='contact-description'>5 rue du Général Roussel - 90000 BELFORT</p>
             <form className='contact-form' ref={form} onSubmit={sendEmail}>
-                <input type='text' className='name' placeholder='Votre nom' name='your_name' />
-                <input type='email' className='email' placeholder='Votre email' name='your_email' />
-                <textarea name='message' className='msg' rows="5" placeholder='Votre message'></textarea>
+                <input type='text' className='name' placeholder='Votre nom' name='your_name' required/>
+                <input type='email' className='email' placeholder='Votre email' name='your_email' required/>
+                <textarea name='message' className='msg' rows="5" placeholder='Votre message' required></textarea>
                 <button type='submit' value='send' className='submit-btn'>Envoyer</button>
             </form>
 

@@ -45,7 +45,7 @@ const Gallery = () => {
   return (
     <section id='Gallery'>
         <div>
-            <h3>gallerie</h3>
+            <h3>galerie</h3>
             <div className="filters">
                 {categories.map((category) => (
                 <button

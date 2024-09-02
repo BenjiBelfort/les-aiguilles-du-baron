@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className='desktopmenu'>
           <Link activeClass='active' to='Intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>à propos</Link>
           {/* <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>atelier</Link> */}
-          <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>gallerie</Link>
+          <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>galerie</Link>
           <Link activeClass='active' to='Services' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>services</Link>
         </div>
         <button className='desktopMenuBtn' onClick={()=> {
@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className='navMenu' style={{display: showMenu? 'flex':'none'}}>
           <Link activeClass='active' to='Intro' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={()=>setShowMenu(false)}>à propos</Link>
           {/* <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>atelier</Link> */}
-          <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={()=>setShowMenu(false)}>gallerie</Link>
+          <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={()=>setShowMenu(false)}>galerie</Link>
           <Link activeClass='active' to='Services' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={()=>setShowMenu(false)}>services</Link>
           <Link activeClass='active' to='Contact' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={()=>setShowMenu(false)}>contact</Link>
         </div>
