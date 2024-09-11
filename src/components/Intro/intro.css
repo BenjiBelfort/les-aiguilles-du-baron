@@ -7,10 +7,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .intro-img {
-    width: 40%;
+    width: 30%;
 }
 
 .lien {
@@ -19,11 +20,6 @@
 
 .gold-words {
     color: #d4bf79;
-}
-
-.introText a {
-    color: #d4bf79;
-    text-decoration: none;
 }
 
 .introText {
@@ -51,6 +47,7 @@
 @media screen and (max-width:800px) {
     .logo-intro {
         display: flex;
+        padding: 0 2rem;
     }
 
     .introContact {
@@ -58,7 +55,6 @@
     }
 
     .introText {
-        text-align: center;
         margin-bottom: 5rem;
     }
 
@@ -69,8 +65,18 @@
 
 }
 
+@media screen and (max-width:500px) {
+    .logo-intro {
+        padding: 0 1rem;
+    }
+}
+
 @media screen and (max-width:375px) {
     .introText {
         font-size: large;
+    }
+
+    .logo-intro {
+        padding: 0 0.5rem;
     }
 }

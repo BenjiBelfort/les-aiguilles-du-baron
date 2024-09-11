@@ -61,6 +61,10 @@
     max-width: 60rem;
 }
 
+.form-label {
+    display: none;
+}
+
 .name, .email, .msg {
     font-size: medium;
     width: 100%;

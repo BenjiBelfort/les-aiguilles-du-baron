@@ -16,7 +16,7 @@ const Atelier = () => {
             </figure>
             <div className="item-content">
               <h4>M. Chellovnik</h4>
-              <p>Membre de la communauté Tatoueur2.0, M.&nbsp;Chellovnik saura vous écouter et partager avec vous son expérience pour vous satisfaire dans de nombreux styles (Réalisme, Semi-réalisme, Floral, Manga, Japonais, Trash Polka, Blackwork, Graphique…).</p>
+              <p>Je me fais toujours un plaisir de vous &laquo; aiguiller &raquo; dans votre projet tattoo. Certifié <span className='lien'><a href="https://www.facebook.com/tatoueur2.0/" target='_blank' rel="noopener noreferrer">Tatoueur2.0</a></span>, votre satisfaction est la mienne.</p>
             </div>
         </div>
         <div className='inter-item'>
@@ -24,11 +24,11 @@ const Atelier = () => {
         </div>
         <div className="item">
             <figure className="image-atelier">
-              <img src={coworking} alt="espace convivial" />
+              <img src={coworking} alt="espace co-working" />
             </figure>
             <div className="item-content">
               <h4>Espace Expo/Co-Working</h4>
-              <p>Au delà du tatouage l’atelier a vocation de lieu d’échange d’artistes de divers horizons en proposant des mises en commun de compétences (co-working) ainsi que des expositions d’oeuvres (photos, peintures..).</p>
+              <p>Au delà du tatouage, l’Atelier a vocation de lieu d’échange d’artistes de divers horizons en proposant des mises en commun de compétences (co-working) ainsi que des expositions d’oeuvres (photos, peintures..).</p>
             </div>
         </div>
         <div className='inter-item'>

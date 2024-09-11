@@ -52,10 +52,11 @@ const Contact = () => {
                 <img src={map} alt="carte d'accès" className='contact-map' />
               </a>
             </div>
+            <p>Du lundi au samedi de 10h à midi et de 14h à 19h</p>
             <form className='contact-form' ref={form} onSubmit={sendEmail}>
-                <input type='text' className='name' placeholder='Votre nom' name='your_name' required/>
-                <input type='email' className='email' placeholder='Votre email' name='your_email' required/>
-                <textarea name='message' className='msg' rows="5" placeholder='Votre message' required></textarea>
+                <input type='text' className='name' id='name' placeholder='Votre nom' name='your_name' required/>
+                <input type='email' className='email' id='email' placeholder='Votre email' name='your_email' required/>
+                <textarea name='message' className='msg' id='message' rows="5" placeholder='Votre message' required></textarea>
                 <button type='submit' value='send' className='submit-btn'>Envoyer</button>
             </form>
 

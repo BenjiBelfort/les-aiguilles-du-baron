@@ -1,15 +1,14 @@
 .main-logo {
     position: absolute;
-    
-    top: 20%; /* Ajustez cette valeur pour positionner le logo verticalement */
+    top: 20%;
     left: 40%;
-    transform: translate(-100%, 50%); /* Centrer le logo horizontalement et ajuster verticalement */
+    transform: translate(-100%, 50%);
     z-index: 1;
 }
 
 .main-logo img {
-    width: 100%; /* Ajustez la taille du logo en pourcentage pour qu'il se redimensionne avec l'image */
-    max-width: 400px; /* Optionnel : Limite supérieure pour la taille du logo */
+    width: 100%;
+    max-width: 400px;
 }
 
 

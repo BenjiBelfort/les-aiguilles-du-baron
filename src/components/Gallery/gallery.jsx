@@ -4,11 +4,9 @@ import './gallery.css';
 
 import labyrinthe1 from '../../assets/photos/dessin_tablette/dessin_labyrinthe1.jpg';
 import labyrinthe2 from '../../assets/photos/dessin_tablette/dessin_labyrinthe2.jpg';
-import labyrinthe3 from '../../assets/photos/dessin_tablette/dessin_labyrinthe3.jpg';
 import dessinAnimaux from '../../assets/photos/dessin_tablette/dessin-animaux.jpg';
 import dessinDragon from '../../assets/photos/dessin_tablette/dessin-dragon.jpg';
 import dessinFleurLune from '../../assets/photos/dessin_tablette/dessin-fleur-et-lune.jpg';
-import dessinFleurSoleil from '../../assets/photos/dessin_tablette/dessin-fleur-et-soleil.jpg';
 import dessinHarryPotter from '../../assets/photos/dessin_tablette/dessin-Harry-Potter.jpg';
 import dessinIndien from '../../assets/photos/dessin_tablette/dessin-indien.jpg';
 import dessinJaponais from '../../assets/photos/dessin_tablette/dessin-japonais.jpg';
@@ -26,6 +24,7 @@ import graphiqueMasque from '../../assets/photos/graphique/graphique-masque.jpg'
 import graphiqueRobot1 from '../../assets/photos/graphique/graphique-robot1.jpg';
 import graphiqueRobot2 from '../../assets/photos/graphique/graphique-robot2.jpg';
 import mangaAkira from '../../assets/photos/manga/manga-Akira.jpg';
+import mangaDragonBall from '../../assets/photos/manga/manga-dragon-ball.jpg';
 import mangaAlbator from '../../assets/photos/manga/manga-Albator.jpg';
 import mangaDragon from '../../assets/photos/manga/manga-dragon.jpg';
 import mangaGreatWave from '../../assets/photos/manga/manga-great-wave.jpg';
@@ -34,7 +33,7 @@ import mangaVisage1 from '../../assets/photos/manga/manga-visage1.jpg';
 import mangaVisage2 from '../../assets/photos/manga/manga-visage2.jpg';
 import realismeCroix1 from '../../assets/photos/realisme/realisme-croix1.jpg';
 import realismeJohnnyHallyday from '../../assets/photos/realisme/realisme-Johnny-Hallyday.jpg';
-import realismeSamourai from '../../assets/photos/realisme/realisme-samourai.png';
+import realismeSamourai from '../../assets/photos/realisme/realisme-samourai.jpg';
 import realismeSamuelLJackson from '../../assets/photos/realisme/realisme-Samuel-L-Jackson.jpg';
 import realismeVisage from '../../assets/photos/realisme/realisme-visage.jpg';
 import semiRealismeBonnet from '../../assets/photos/semi-realisme/semi-realisme-bonnet.jpg';
@@ -45,14 +44,16 @@ import semiRealismeOurs from '../../assets/photos/semi-realisme/semi-realisme-ou
 import semiRealismeSpartiate from '../../assets/photos/semi-realisme/semi-realisme-spartiate.jpg';
 import semiRealismeVisage from '../../assets/photos/semi-realisme/semi-realisme-visage.jpg';
 
+import dessinErotica from '../../assets/photos/dessin_tablette/dessin-erotica.jpg';
+import dessinSkateur from '../../assets/photos/dessin_tablette/dessin-skateur.jpg'; 
+import dessinTaxiDriver from '../../assets/photos/dessin_tablette/dessin-taxidriver.jpg'; 
+
 const initialPhotos = [
     { id: 1, category: 'dessin', url: labyrinthe1, alt: 'dessin d&apos;un labyrinthe dans une tête' },
     { id: 2, category: 'dessin', url: labyrinthe2, alt: 'dessin en pointillé d&apos;un labyrinthe dans une tête' },
-    { id: 3, category: 'dessin', url: labyrinthe3, alt: 'dessin réaliste d&apos;un labyrinthe dans une tête' },
     { id: 4, category: 'dessin', url: dessinAnimaux, alt: 'dessin d&apos;un crabe' },
     { id: 5, category: 'dessin', url: dessinDragon, alt: 'dessin d&apos;un dragon entouré de fleurs' },
     { id: 6, category: 'dessin', url: dessinFleurLune, alt: 'dessin d&apos;une fleur et d&apos;un croissant de lune' },
-    { id: 7, category: 'dessin', url: dessinFleurSoleil, alt: 'dessin d&apos;une fleur et d&apos;un soleil' },
     { id: 9, category: 'dessin', url: dessinHarryPotter, alt: 'dessin des mystères du monde d&apos;Harry Potter' },
     { id: 10, category: 'dessin', url: dessinIndien, alt: 'dessin tête de mort indien' },
     { id: 11, category: 'dessin', url: dessinJaponais, alt: 'dessin de carpes dans un style japonais' },
@@ -65,36 +66,40 @@ const initialPhotos = [
     { id: 18, category: 'floral', url: floralDos3, alt: 'fleur tatouée sur le dos d&apos;une femme sur fond de ciel bleu' },
     { id: 19, category: 'floral', url: floralEpaule1, alt: 'fleur tatouée sur l&apos;épaule d&apos;une femme' },
     { id: 20, category: 'floral', url: floralEpaule2, alt: 'rose tatouée sur l&apos;épaule d&apos;une femme' },
+    { id: 24, category: 'graphique', url: graphiqueRobot2, alt: 'robot tatoué sur un mollet photo en couleur' },
+    { id: 23, category: 'graphique', url: graphiqueRobot1, alt: 'robot tatoué sur un mollet photo en noir et blanc' },
     { id: 21, category: 'graphique', url: graphiqueInsecte, alt: 'dessin d&apos;un insecte' },
     { id: 22, category: 'graphique', url: graphiqueMasque, alt: 'dessin d&apos;un masque à gaz sur une tête de mort' },
-    { id: 23, category: 'graphique', url: graphiqueRobot1, alt: 'robot tatoué sur un mollet photo en noir et blanc' },
-    { id: 24, category: 'graphique', url: graphiqueRobot2, alt: 'robot tatoué sur un mollet photo en couleur' },
+    { id: 28, category: 'manga', url: mangaGreatWave, alt: 'Great Wave d&aposHokusai tatouée sur un mollet' },
+    { id: 27, category: 'manga', url: mangaDragon, alt: 'tatouage d&apos;un dragon style manga sur le dos' },
+    { id: 47, category: 'manga', url: mangaSaintSeiya, alt: 'tatouage Saint Seiya' },
+    { id: 29, category: 'manga', url: mangaDragonBall, alt: 'dessin dragon ball' },
     { id: 25, category: 'manga', url: mangaAkira, alt: 'dessin d&apos;un homme style manga' },
     { id: 26, category: 'manga', url: mangaAlbator, alt: 'tatouage Albator' },
-    { id: 27, category: 'manga', url: mangaDragon, alt: 'tatouage d&apos;un dragon style manga sur le dos' },
-    { id: 28, category: 'manga', url: mangaGreatWave, alt: 'Great Wave d&aposHokusai tatouée sur un mollet' },
-    { id: 29, category: 'manga', url: mangaSaintSeiya, alt: 'tatouage Saint Seiya' },
     { id: 30, category: 'manga', url: mangaVisage1, alt: 'tatouage style manga visage de femme dans un champ' },
     { id: 31, category: 'manga', url: mangaVisage2, alt: 'tatouage style manga visage de femme' },
-    { id: 32, category: 'realisme', url: realismeCroix1, alt: 'tatouage d&aposune croix sur le dos' },
-    { id: 33, category: 'realisme', url: realismeJohnnyHallyday, alt: 'tatouage Johnny Hallyday sur un mollet' },
-    { id: 34, category: 'realisme', url: realismeSamourai, alt: 'samourai au japon médiéval' },
-    { id: 35, category: 'realisme', url: realismeSamuelLJackson, alt: 'tatouage réalisme de Samuel L. Jackson' },
-    { id: 36, category: 'realisme', url: realismeVisage, alt: 'tatouage visage d&aposenfant' },
-    { id: 37, category: 'realisme', url: semiRealismeBonnet, alt: 'tatouage d&aposun bonnet' },
-    { id: 38, category: 'realisme', url: semiRealismeCalaveras, alt: 'tatouage calaveras style mexicain' },
-    { id: 39, category: 'realisme', url: semiRealismeElephant, alt: 'tatouage elephant sur l&aposomoplate' },
-    { id: 40, category: 'realisme', url: semiRealismeHedwige, alt: 'tatouage de Hedwige la chouette d&aposHarry Potter' },
-    { id: 41, category: 'realisme', url: semiRealismeOurs, alt: 'tatouage d&aposun ours sur l&aposépaule d&aposun homme' },
-    { id: 42, category: 'realisme', url: semiRealismeSpartiate, alt: 'tatouage d&aposun spartiate et de Poséidon' },
-    { id: 43, category: 'realisme', url: semiRealismeVisage, alt: 'tatouage d&aposun masque de visage' },
+    { id: 201, category: 'realisme', url: semiRealismeElephant, alt: 'tatouage elephant sur l&aposomoplate' },
+    { id: 202, category: 'realisme', url: semiRealismeSpartiate, alt: 'tatouage d&aposun spartiate et de Poséidon' },
+    { id: 203, category: 'realisme', url: semiRealismeCalaveras, alt: 'tatouage calaveras style mexicain' },
+    { id: 204, category: 'realisme', url: realismeCroix1, alt: 'tatouage d&aposune croix sur le dos' },
+    { id: 205, category: 'realisme', url: realismeSamourai, alt: 'samourai au japon médiéval' },
+    { id: 206, category: 'realisme', url: realismeSamuelLJackson, alt: 'tatouage réalisme de Samuel L. Jackson' },
+    { id: 207, category: 'realisme', url: semiRealismeBonnet, alt: 'tatouage d&aposun bonnet' },
+    { id: 208, category: 'realisme', url: semiRealismeHedwige, alt: 'tatouage de Hedwige la chouette d&aposHarry Potter' },
+    { id: 209, category: 'realisme', url: realismeVisage, alt: 'tatouage visage d&aposenfant' },
+    { id: 210, category: 'realisme', url: semiRealismeOurs, alt: 'tatouage d&aposun ours sur l&aposépaule d&aposun homme' },
+    { id: 211, category: 'realisme', url: semiRealismeVisage, alt: 'tatouage d&aposun masque de visage' },
+    { id: 212, category: 'realisme', url: realismeJohnnyHallyday, alt: 'tatouage Johnny Hallyday sur un mollet' },
+    { id: 44, category: 'dessin', url: dessinErotica, alt: 'dessin erotica en panavision' },
+    { id: 45, category: 'dessin', url: dessinTaxiDriver, alt: 'dessin erotica en panavision' },
+    { id: 46, category: 'dessin', url: dessinSkateur, alt: 'dessin erotica en panavision' },
 ];
 
 const categories = [
     { key: 'TOUS', label: 'Toutes les catégories' },
-    { key: 'realisme', label: 'Réalismes, Semi-réalismes' },
-    { key: 'manga', label: 'Mangas, Japonais' },
-    { key: 'graphique', label: 'Graphiques' },
+    { key: 'realisme', label: 'Réalisme, Semi-réalisme' },
+    { key: 'manga', label: 'Manga, Japonais' },
+    { key: 'graphique', label: 'Graphique' },
     { key: 'dessin', label: 'Dessins Tablette' },
     { key: 'floral', label: 'Floral' }
 ];
