@@ -3,11 +3,58 @@
     
     top: 20%; /* Ajustez cette valeur pour positionner le logo verticalement */
     left: 40%;
-    transform: translate(-50%, -20%); /* Centrer le logo horizontalement et ajuster verticalement */
+    transform: translate(-100%, 50%); /* Centrer le logo horizontalement et ajuster verticalement */
     z-index: 1;
 }
 
 .main-logo img {
     width: 100%; /* Ajustez la taille du logo en pourcentage pour qu'il se redimensionne avec l'image */
-    max-width: 500px; /* Optionnel : Limite supérieure pour la taille du logo */
+    max-width: 400px; /* Optionnel : Limite supérieure pour la taille du logo */
+}
+
+
+@media screen and (min-width:1600px) {
+    .main-logo img {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .main-logo img {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .main-logo {
+        top: 15%;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .main-logo {
+        top: 10%;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .main-logo {
+        top: 8%;
+    }
+
+    .main-logo img {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .main-logo img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .main-logo img {
+        display: none;
+    }
 }

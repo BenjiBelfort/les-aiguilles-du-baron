@@ -3,7 +3,7 @@ import Intro from './components/Intro/intro';
 import Mainimg from './components/MainImg/mainimg';
 import Mainlogo from './components/Mainlogo/mainlogo';
 import Gallery from './components/Gallery/gallery';
-import Services from './components/Services/services';
+import Atelier from './components/Atelier/atelier';
 import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
 
@@ -15,7 +15,7 @@ const App = () => {
       <Mainlogo />
       <Intro />
       <Gallery />
-      <Services />
+      <Atelier />
       <Contact />
       <Footer />
     </div>

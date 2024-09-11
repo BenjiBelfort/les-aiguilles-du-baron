@@ -20,7 +20,6 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -37,9 +36,8 @@ const Navbar = () => {
         </div>
         <div className='desktopmenu'>
           <Link activeClass='active' to='Intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>à propos</Link>
-          {/* <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>atelier</Link> */}
           <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>galerie</Link>
-          <Link activeClass='active' to='Services' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>services</Link>
+          <Link activeClass='active' to='Atelier' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>l&apos;atelier</Link>
         </div>
         <button className='desktopMenuBtn' onClick={()=> {
           document.getElementById('Contact').scrollIntoView({behavior:'smooth'});
@@ -51,9 +49,8 @@ const Navbar = () => {
         <img src={burgerMenu} alt='Menu' className='mobMenu' onClick={()=>setShowMenu(!showMenu)} />
         <div className='navMenu' style={{display: showMenu? 'flex':'none'}}>
           <Link activeClass='active' to='Intro' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={()=>setShowMenu(false)}>à propos</Link>
-          {/* <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>atelier</Link> */}
-          <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={()=>setShowMenu(false)}>galerie</Link>
-          <Link activeClass='active' to='Services' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={()=>setShowMenu(false)}>services</Link>
+          <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-40} duration={500} className='ListItem' onClick={()=>setShowMenu(false)}>galerie</Link>
+          <Link activeClass='active' to='Atelier' spy={true} smooth={true} offset={-80} duration={500} className='ListItem' onClick={()=>setShowMenu(false)}>l&apos;atelier</Link>
           <Link activeClass='active' to='Contact' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={()=>setShowMenu(false)}>contact</Link>
         </div>
 

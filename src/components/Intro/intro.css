@@ -1,15 +1,36 @@
 #Intro {
     max-width: 75rem;
     margin: 0 auto;
-    margin-bottom: 10rem;
+}
+
+.introContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-img {
+    width: 40%;
+}
+
+.lien {
+    color: #d4bf79;
+}
+
+.gold-words {
+    color: #d4bf79;
+}
+
+.introText a {
+    color: #d4bf79;
+    text-decoration: none;
 }
 
 .introText {
     padding: 0 2rem;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-size: x-large;
+    line-height: 1.5;
+    flex: 1;
 }
 
 .goldText {
@@ -17,4 +38,39 @@
     font-weight: bold;
     font-family: "Shippori Mincho", serif;
     text-transform: uppercase;
+}
+
+.logo-intro {
+    display: none;
+    width: 100%;
+    margin-bottom: 3rem;
+    padding: 0 20px;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 1));
+}
+
+@media screen and (max-width:800px) {
+    .logo-intro {
+        display: flex;
+    }
+
+    .introContact {
+        flex-direction: column;
+    }
+
+    .introText {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .intro-img {
+        width: 80%;
+        order: 1;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .introText {
+        font-size: large;
+    }
 }

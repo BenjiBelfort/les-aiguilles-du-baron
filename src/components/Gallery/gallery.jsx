@@ -1,81 +1,180 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import CategoryDescription from './categoryDescription';
 import './gallery.css';
 
-import photo1 from '../../assets/photos/detail.jpg';
-import photo2 from '../../assets/photos/dragon.jpg';
-import photo3 from '../../assets/photos/encres.jpg';
-import photo4 from '../../assets/photos/fleurs.jpg';
-import photo5 from '../../assets/photos/fleurs2.jpg';
-import photo6 from '../../assets/photos/poseidon.jpg';
-import photo7 from '../../assets/photos/poseidon2.jpg';
-import photo8 from '../../assets/photos/croix.jpg';
-import photo9 from '../../assets/photos/robot.jpg';
-import photo10 from '../../assets/photos/robot2.jpg';
+import labyrinthe1 from '../../assets/photos/dessin_tablette/dessin_labyrinthe1.jpg';
+import labyrinthe2 from '../../assets/photos/dessin_tablette/dessin_labyrinthe2.jpg';
+import labyrinthe3 from '../../assets/photos/dessin_tablette/dessin_labyrinthe3.jpg';
+import dessinAnimaux from '../../assets/photos/dessin_tablette/dessin-animaux.jpg';
+import dessinDragon from '../../assets/photos/dessin_tablette/dessin-dragon.jpg';
+import dessinFleurLune from '../../assets/photos/dessin_tablette/dessin-fleur-et-lune.jpg';
+import dessinFleurSoleil from '../../assets/photos/dessin_tablette/dessin-fleur-et-soleil.jpg';
+import dessinHarryPotter from '../../assets/photos/dessin_tablette/dessin-Harry-Potter.jpg';
+import dessinIndien from '../../assets/photos/dessin_tablette/dessin-indien.jpg';
+import dessinJaponais from '../../assets/photos/dessin_tablette/dessin-japonais.jpg';
+import dessinPierreCroix from '../../assets/photos/dessin_tablette/dessin-Pierre_Croix.jpg';
+import dessinRobot from '../../assets/photos/dessin_tablette/dessin-robot.jpg';
+import dessinVisage from '../../assets/photos/dessin_tablette/dessin-visage.jpg';
+import floralBras from '../../assets/photos/floral/floral-bras.jpg';
+import floralDos1 from '../../assets/photos/floral/floral-dos1.jpg';
+import floralDos2 from '../../assets/photos/floral/floral-dos2.jpg';
+import floralDos3 from '../../assets/photos/floral/floral-dos3.jpg';
+import floralEpaule1 from '../../assets/photos/floral/floral-epaule1.jpg';
+import floralEpaule2 from '../../assets/photos/floral/floral-epaule2.jpg';
+import graphiqueInsecte from '../../assets/photos/graphique/graphique-insecte.jpg';
+import graphiqueMasque from '../../assets/photos/graphique/graphique-masque.jpg';
+import graphiqueRobot1 from '../../assets/photos/graphique/graphique-robot1.jpg';
+import graphiqueRobot2 from '../../assets/photos/graphique/graphique-robot2.jpg';
+import mangaAkira from '../../assets/photos/manga/manga-Akira.jpg';
+import mangaAlbator from '../../assets/photos/manga/manga-Albator.jpg';
+import mangaDragon from '../../assets/photos/manga/manga-dragon.jpg';
+import mangaGreatWave from '../../assets/photos/manga/manga-great-wave.jpg';
+import mangaSaintSeiya from '../../assets/photos/manga/manga-saint-seiya.jpg';
+import mangaVisage1 from '../../assets/photos/manga/manga-visage1.jpg';
+import mangaVisage2 from '../../assets/photos/manga/manga-visage2.jpg';
+import realismeCroix1 from '../../assets/photos/realisme/realisme-croix1.jpg';
+import realismeJohnnyHallyday from '../../assets/photos/realisme/realisme-Johnny-Hallyday.jpg';
+import realismeSamourai from '../../assets/photos/realisme/realisme-samourai.png';
+import realismeSamuelLJackson from '../../assets/photos/realisme/realisme-Samuel-L-Jackson.jpg';
+import realismeVisage from '../../assets/photos/realisme/realisme-visage.jpg';
+import semiRealismeBonnet from '../../assets/photos/semi-realisme/semi-realisme-bonnet.jpg';
+import semiRealismeCalaveras from '../../assets/photos/semi-realisme/semi-realisme-calaveras.jpg';
+import semiRealismeElephant from '../../assets/photos/semi-realisme/semi-realisme-elephant.jpg';
+import semiRealismeHedwige from '../../assets/photos/semi-realisme/semi-realisme-Hedwige.jpg';
+import semiRealismeOurs from '../../assets/photos/semi-realisme/semi-realisme-ours.jpg';
+import semiRealismeSpartiate from '../../assets/photos/semi-realisme/semi-realisme-spartiate.jpg';
+import semiRealismeVisage from '../../assets/photos/semi-realisme/semi-realisme-visage.jpg';
 
-const photos = [
-    { id: 1, url: photo1, category: 'réalisme', alt: 'texte alternatif photo 1 à changer' },
-    { id: 2, url: photo2, category: 'manga', alt: 'texte alternatif photo 2 à changer' },
-    { id: 3, url: photo3, category: 'polka', alt: 'texte alternatif photo 3 à changer' },
-    { id: 4, url: photo4, category: 'réalisme', alt: 'texte alternatif photo 4 à changer' },
-    { id: 5, url: photo5, category: 'manga', alt: 'texte alternatif photo 5 à changer' },
-    { id: 6, url: photo6, category: 'polka', alt: 'texte alternatif photo 6 à changer' },
-    { id: 7, url: photo7, category: 'réalisme', alt: 'texte alternatif photo 7 à changer' },
-    { id: 8, url: photo8, category: 'manga', alt: 'texte alternatif photo 8 à changer' },
-    { id: 9, url: photo9, category: 'polka', alt: 'texte alternatif photo 9 à changer' },
-    { id: 10, url: photo10, category: 'réalisme', alt: 'texte alternatif photo 10 à changer' }
-  ];
+const initialPhotos = [
+    { id: 1, category: 'dessin', url: labyrinthe1, alt: 'dessin d&apos;un labyrinthe dans une tête' },
+    { id: 2, category: 'dessin', url: labyrinthe2, alt: 'dessin en pointillé d&apos;un labyrinthe dans une tête' },
+    { id: 3, category: 'dessin', url: labyrinthe3, alt: 'dessin réaliste d&apos;un labyrinthe dans une tête' },
+    { id: 4, category: 'dessin', url: dessinAnimaux, alt: 'dessin d&apos;un crabe' },
+    { id: 5, category: 'dessin', url: dessinDragon, alt: 'dessin d&apos;un dragon entouré de fleurs' },
+    { id: 6, category: 'dessin', url: dessinFleurLune, alt: 'dessin d&apos;une fleur et d&apos;un croissant de lune' },
+    { id: 7, category: 'dessin', url: dessinFleurSoleil, alt: 'dessin d&apos;une fleur et d&apos;un soleil' },
+    { id: 9, category: 'dessin', url: dessinHarryPotter, alt: 'dessin des mystères du monde d&apos;Harry Potter' },
+    { id: 10, category: 'dessin', url: dessinIndien, alt: 'dessin tête de mort indien' },
+    { id: 11, category: 'dessin', url: dessinJaponais, alt: 'dessin de carpes dans un style japonais' },
+    { id: 12, category: 'dessin', url: dessinPierreCroix, alt: 'dessin d&apos;un homme crucifié' },
+    { id: 13, category: 'dessin', url: dessinRobot, alt: 'dessin d&apos;un robot' },
+    { id: 14, category: 'dessin', url: dessinVisage, alt: 'dessin d&apos;un homme qui fume' },
+    { id: 15, category: 'floral', url: floralBras, alt: 'fleur tatouée sur un avant bras' },
+    { id: 16, category: 'floral', url: floralDos1, alt: 'fleur tatouée sur le dos d&apos;une femme' },
+    { id: 17, category: 'floral', url: floralDos2, alt: 'fleur tatouée sur le dos d&apos;une femme allongée dans un champ' },
+    { id: 18, category: 'floral', url: floralDos3, alt: 'fleur tatouée sur le dos d&apos;une femme sur fond de ciel bleu' },
+    { id: 19, category: 'floral', url: floralEpaule1, alt: 'fleur tatouée sur l&apos;épaule d&apos;une femme' },
+    { id: 20, category: 'floral', url: floralEpaule2, alt: 'rose tatouée sur l&apos;épaule d&apos;une femme' },
+    { id: 21, category: 'graphique', url: graphiqueInsecte, alt: 'dessin d&apos;un insecte' },
+    { id: 22, category: 'graphique', url: graphiqueMasque, alt: 'dessin d&apos;un masque à gaz sur une tête de mort' },
+    { id: 23, category: 'graphique', url: graphiqueRobot1, alt: 'robot tatoué sur un mollet photo en noir et blanc' },
+    { id: 24, category: 'graphique', url: graphiqueRobot2, alt: 'robot tatoué sur un mollet photo en couleur' },
+    { id: 25, category: 'manga', url: mangaAkira, alt: 'dessin d&apos;un homme style manga' },
+    { id: 26, category: 'manga', url: mangaAlbator, alt: 'tatouage Albator' },
+    { id: 27, category: 'manga', url: mangaDragon, alt: 'tatouage d&apos;un dragon style manga sur le dos' },
+    { id: 28, category: 'manga', url: mangaGreatWave, alt: 'Great Wave d&aposHokusai tatouée sur un mollet' },
+    { id: 29, category: 'manga', url: mangaSaintSeiya, alt: 'tatouage Saint Seiya' },
+    { id: 30, category: 'manga', url: mangaVisage1, alt: 'tatouage style manga visage de femme dans un champ' },
+    { id: 31, category: 'manga', url: mangaVisage2, alt: 'tatouage style manga visage de femme' },
+    { id: 32, category: 'realisme', url: realismeCroix1, alt: 'tatouage d&aposune croix sur le dos' },
+    { id: 33, category: 'realisme', url: realismeJohnnyHallyday, alt: 'tatouage Johnny Hallyday sur un mollet' },
+    { id: 34, category: 'realisme', url: realismeSamourai, alt: 'samourai au japon médiéval' },
+    { id: 35, category: 'realisme', url: realismeSamuelLJackson, alt: 'tatouage réalisme de Samuel L. Jackson' },
+    { id: 36, category: 'realisme', url: realismeVisage, alt: 'tatouage visage d&aposenfant' },
+    { id: 37, category: 'realisme', url: semiRealismeBonnet, alt: 'tatouage d&aposun bonnet' },
+    { id: 38, category: 'realisme', url: semiRealismeCalaveras, alt: 'tatouage calaveras style mexicain' },
+    { id: 39, category: 'realisme', url: semiRealismeElephant, alt: 'tatouage elephant sur l&aposomoplate' },
+    { id: 40, category: 'realisme', url: semiRealismeHedwige, alt: 'tatouage de Hedwige la chouette d&aposHarry Potter' },
+    { id: 41, category: 'realisme', url: semiRealismeOurs, alt: 'tatouage d&aposun ours sur l&aposépaule d&aposun homme' },
+    { id: 42, category: 'realisme', url: semiRealismeSpartiate, alt: 'tatouage d&aposun spartiate et de Poséidon' },
+    { id: 43, category: 'realisme', url: semiRealismeVisage, alt: 'tatouage d&aposun masque de visage' },
+];
 
-const categories = ['TOUS', 'réalisme', 'manga', 'polka'];
+const categories = [
+    { key: 'TOUS', label: 'Toutes les catégories' },
+    { key: 'realisme', label: 'Réalismes, Semi-réalismes' },
+    { key: 'manga', label: 'Mangas, Japonais' },
+    { key: 'graphique', label: 'Graphiques' },
+    { key: 'dessin', label: 'Dessins Tablette' },
+    { key: 'floral', label: 'Floral' }
+];
 
-const categoryDescriptions = {
-    réalisme: "Le style réalisme correspond à des dessins très proches de la réalité.",
-    manga: "Le style manga est caractérisé par des dessins aux traits exagérés et expressifs, typiques de la bande dessinée japonaise.",
-    polka: "Le style polka est souvent associé à des motifs répétitifs et des tatouages minimalistes.",
-    TOUS: "Découvrez mon univers artistique au travers de mes réalisations",
+// Fonction pour mélanger les photos de manière aléatoire
+const shufflePhotos = (photosArray) => {
+    return photosArray
+        .map(photo => ({ ...photo, sortKey: Math.random() })) // Ajoute un "sortKey" aléatoire
+        .sort((a, b) => a.sortKey - b.sortKey);
 };
 
 const Gallery = () => {
-
+    const [photos] = useState(initialPhotos);
     const [selectedCategory, setSelectedCategory] = useState('TOUS');
+    const [showDescription, setShowDescription] = useState(true); // Initialement vrai pour la catégorie "TOUS"
+    const [showGallery, setShowGallery] = useState(true);
+    const [resetGallery, setResetGallery] = useState(false);
 
-    const filteredPhotos = photos.filter(photo =>
-      selectedCategory === 'TOUS' ? true : photo.category === selectedCategory
+    useEffect(() => {
+        if (selectedCategory === 'TOUS') {
+            setShowDescription(false);
+            setTimeout(() => setShowGallery(true), 500); // Faire réapparaître la galerie après le fade out
+            setResetGallery(false);
+        } else {
+            setShowGallery(false); // Masquer la galerie d'abord
+            setTimeout(() => {
+                setShowDescription(true);
+            }, 0); // Faire apparaître le paragraphe après le fade out de la galerie
+            setResetGallery(true); 
+        }
+    }, [selectedCategory]);
+    
+    useEffect(() => {
+        if (showDescription) {
+            setTimeout(() => {
+                if (resetGallery) {
+                    setResetGallery(false);
+                    setShowGallery(true); // Faire réapparaître la galerie avec un délai similaire
+                }
+            }, 500); // Synchroniser la réapparition de la galerie avec la description
+        }
+    }, [showDescription, resetGallery]);
+
+    const filteredPhotos = selectedCategory === 'TOUS'
+        ? shufflePhotos(photos)
+        : photos.filter(photo => photo.category === selectedCategory);
+
+    return (
+        <section id='Gallery'>
+            <div>
+                <h3>galerie</h3>
+                <div className="filters">
+                    {categories.map((category) => (
+                        <button
+                            key={category.key}
+                            className={`filter-button ${selectedCategory === category.key ? 'active' : ''}`}
+                            onClick={() => setSelectedCategory(category.key)}
+                        >
+                            {category.label}
+                        </button>
+                    ))}
+                </div>
+
+                <div className={`category-description-container ${showDescription ? 'fade-in' : 'fade-out'}`}>
+                    <CategoryDescription selectedCategory={selectedCategory} />
+                </div>
+
+                <div className={`gallery-container ${showGallery ? 'fade-in' : 'fade-out'}`}>
+                    {filteredPhotos.map((photo) => (
+                        <img
+                            key={photo.id}
+                            src={photo.url}
+                            alt={photo.alt}
+                            className="photo-thumbnail"
+                        />
+                    ))}
+                </div>
+            </div>
+        </section>
     );
-
-  return (
-    <section id='Gallery'>
-        <div>
-            <h3>galerie</h3>
-            <div className="filters">
-                {categories.map((category) => (
-                <button
-                    key={category}
-                    className={`filter-button ${selectedCategory === category ? 'active' : ''}`}
-                    onClick={() => setSelectedCategory(category)}
-                >
-                    {category}
-                </button>
-                ))}
-            </div>
-
-            <p className="category-description">
-                {categoryDescriptions[selectedCategory]}
-            </p>
-
-            <div className="gallery-container">
-                {filteredPhotos.map((photo) => (
-                <img
-                    key={photo.id}
-                    src={photo.url}
-                    alt={photo.alt}
-                    className="photo-thumbnail"
-                />
-                ))}
-            </div>
-
-        </div>
-    </section>
-  )
 }
 
 export default Gallery;
