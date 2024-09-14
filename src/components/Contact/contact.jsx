@@ -21,8 +21,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_g942k8k', 'template_drk5nns', form.current, {
-        publicKey: 'vX579AdagFxAVIYa6',
+      .sendForm('service_igpqnd4', 'template_88jzv9o', form.current, {
+        publicKey: 'YyfiYuz0ZxFVoTKJV',
       })
       .then(
         () => {
@@ -52,7 +52,8 @@ const Contact = () => {
                 <img src={map} alt="carte d'accès" className='contact-map' />
               </a>
             </div>
-            <p>Du lundi au samedi de 10h à midi et de 14h à 19h</p>
+            <p className='horaires'>Du lundi au samedi <br />
+            10h à 12h et de 14h à 19h</p>
             <form className='contact-form' ref={form} onSubmit={sendEmail}>
                 <input type='text' className='name' id='name' placeholder='Votre nom' name='your_name' required/>
                 <input type='email' className='email' id='email' placeholder='Votre email' name='your_email' required/>

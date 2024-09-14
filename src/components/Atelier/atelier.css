@@ -22,23 +22,7 @@ h4 {
 
 p {
     font-size: larger;
-}
-
-.lien {
-    color: #d4bf79;
-}
-
-.lien a {
-    color: #d4bf79;
-    text-decoration: underline;
-    transition: text-shadow 0.3s ease-in-out;
-}
-
-.lien a:hover {
-    text-shadow: 0 0 5px rgba(212, 191, 121, 0.8),
-               0 0 10px rgba(212, 191, 121, 0.6),
-               0 0 15px rgba(212, 191, 121, 0.4);
-    color: #d4bf79;
+    line-height: 1.5rem;
 }
 
 .item {
@@ -53,6 +37,8 @@ p {
     overflow: hidden;
     margin-right: 20px;
     object-fit: cover;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    
 }
 
 .inter-item {

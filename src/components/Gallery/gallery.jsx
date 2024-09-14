@@ -2,12 +2,8 @@ import { useState, useEffect } from 'react';
 import CategoryDescription from './categoryDescription';
 import './gallery.css';
 
-import labyrinthe1 from '../../assets/photos/dessin_tablette/dessin_labyrinthe1.jpg';
-import labyrinthe2 from '../../assets/photos/dessin_tablette/dessin_labyrinthe2.jpg';
 import dessinAnimaux from '../../assets/photos/dessin_tablette/dessin-animaux.jpg';
 import dessinDragon from '../../assets/photos/dessin_tablette/dessin-dragon.jpg';
-import dessinFleurLune from '../../assets/photos/dessin_tablette/dessin-fleur-et-lune.jpg';
-import dessinHarryPotter from '../../assets/photos/dessin_tablette/dessin-Harry-Potter.jpg';
 import dessinIndien from '../../assets/photos/dessin_tablette/dessin-indien.jpg';
 import dessinJaponais from '../../assets/photos/dessin_tablette/dessin-japonais.jpg';
 import dessinPierreCroix from '../../assets/photos/dessin_tablette/dessin-Pierre_Croix.jpg';
@@ -15,8 +11,6 @@ import dessinRobot from '../../assets/photos/dessin_tablette/dessin-robot.jpg';
 import dessinVisage from '../../assets/photos/dessin_tablette/dessin-visage.jpg';
 import floralBras from '../../assets/photos/floral/floral-bras.jpg';
 import floralDos1 from '../../assets/photos/floral/floral-dos1.jpg';
-import floralDos2 from '../../assets/photos/floral/floral-dos2.jpg';
-import floralDos3 from '../../assets/photos/floral/floral-dos3.jpg';
 import floralEpaule1 from '../../assets/photos/floral/floral-epaule1.jpg';
 import floralEpaule2 from '../../assets/photos/floral/floral-epaule2.jpg';
 import graphiqueInsecte from '../../assets/photos/graphique/graphique-insecte.jpg';
@@ -49,21 +43,18 @@ import dessinSkateur from '../../assets/photos/dessin_tablette/dessin-skateur.jp
 import dessinTaxiDriver from '../../assets/photos/dessin_tablette/dessin-taxidriver.jpg'; 
 
 const initialPhotos = [
-    { id: 1, category: 'dessin', url: labyrinthe1, alt: 'dessin d&apos;un labyrinthe dans une tête' },
-    { id: 2, category: 'dessin', url: labyrinthe2, alt: 'dessin en pointillé d&apos;un labyrinthe dans une tête' },
     { id: 4, category: 'dessin', url: dessinAnimaux, alt: 'dessin d&apos;un crabe' },
     { id: 5, category: 'dessin', url: dessinDragon, alt: 'dessin d&apos;un dragon entouré de fleurs' },
-    { id: 6, category: 'dessin', url: dessinFleurLune, alt: 'dessin d&apos;une fleur et d&apos;un croissant de lune' },
-    { id: 9, category: 'dessin', url: dessinHarryPotter, alt: 'dessin des mystères du monde d&apos;Harry Potter' },
     { id: 10, category: 'dessin', url: dessinIndien, alt: 'dessin tête de mort indien' },
     { id: 11, category: 'dessin', url: dessinJaponais, alt: 'dessin de carpes dans un style japonais' },
     { id: 12, category: 'dessin', url: dessinPierreCroix, alt: 'dessin d&apos;un homme crucifié' },
     { id: 13, category: 'dessin', url: dessinRobot, alt: 'dessin d&apos;un robot' },
     { id: 14, category: 'dessin', url: dessinVisage, alt: 'dessin d&apos;un homme qui fume' },
+    { id: 44, category: 'dessin', url: dessinErotica, alt: 'dessin erotica en panavision' },
+    { id: 45, category: 'dessin', url: dessinTaxiDriver, alt: 'dessin erotica en panavision' },
+    { id: 46, category: 'dessin', url: dessinSkateur, alt: 'dessin erotica en panavision' },
     { id: 15, category: 'floral', url: floralBras, alt: 'fleur tatouée sur un avant bras' },
     { id: 16, category: 'floral', url: floralDos1, alt: 'fleur tatouée sur le dos d&apos;une femme' },
-    { id: 17, category: 'floral', url: floralDos2, alt: 'fleur tatouée sur le dos d&apos;une femme allongée dans un champ' },
-    { id: 18, category: 'floral', url: floralDos3, alt: 'fleur tatouée sur le dos d&apos;une femme sur fond de ciel bleu' },
     { id: 19, category: 'floral', url: floralEpaule1, alt: 'fleur tatouée sur l&apos;épaule d&apos;une femme' },
     { id: 20, category: 'floral', url: floralEpaule2, alt: 'rose tatouée sur l&apos;épaule d&apos;une femme' },
     { id: 24, category: 'graphique', url: graphiqueRobot2, alt: 'robot tatoué sur un mollet photo en couleur' },
@@ -90,9 +81,6 @@ const initialPhotos = [
     { id: 210, category: 'realisme', url: semiRealismeOurs, alt: 'tatouage d&aposun ours sur l&aposépaule d&aposun homme' },
     { id: 211, category: 'realisme', url: semiRealismeVisage, alt: 'tatouage d&aposun masque de visage' },
     { id: 212, category: 'realisme', url: realismeJohnnyHallyday, alt: 'tatouage Johnny Hallyday sur un mollet' },
-    { id: 44, category: 'dessin', url: dessinErotica, alt: 'dessin erotica en panavision' },
-    { id: 45, category: 'dessin', url: dessinTaxiDriver, alt: 'dessin erotica en panavision' },
-    { id: 46, category: 'dessin', url: dessinSkateur, alt: 'dessin erotica en panavision' },
 ];
 
 const categories = [
@@ -100,52 +88,57 @@ const categories = [
     { key: 'realisme', label: 'Réalisme, Semi-réalisme' },
     { key: 'manga', label: 'Manga, Japonais' },
     { key: 'graphique', label: 'Graphique' },
-    { key: 'dessin', label: 'Dessins Tablette' },
+    { key: 'dessin', label: 'Dessins & Projets' },
     { key: 'floral', label: 'Floral' }
 ];
 
-// Fonction pour mélanger les photos de manière aléatoire
 const shufflePhotos = (photosArray) => {
     return photosArray
-        .map(photo => ({ ...photo, sortKey: Math.random() })) // Ajoute un "sortKey" aléatoire
+        .map(photo => ({ ...photo, sortKey: Math.random() }))
         .sort((a, b) => a.sortKey - b.sortKey);
 };
 
 const Gallery = () => {
     const [photos] = useState(initialPhotos);
     const [selectedCategory, setSelectedCategory] = useState('TOUS');
-    const [showDescription, setShowDescription] = useState(true); // Initialement vrai pour la catégorie "TOUS"
+    const [showDescription, setShowDescription] = useState(true);
     const [showGallery, setShowGallery] = useState(true);
     const [resetGallery, setResetGallery] = useState(false);
+    const [visiblePhotosCount, setVisiblePhotosCount] = useState(10); // Nouvel état pour limiter le nombre d'images affichées
 
     useEffect(() => {
         if (selectedCategory === 'TOUS') {
             setShowDescription(false);
-            setTimeout(() => setShowGallery(true), 500); // Faire réapparaître la galerie après le fade out
+            setTimeout(() => setShowGallery(true), 500);
             setResetGallery(false);
+            setVisiblePhotosCount(10); // Réinitialiser à 10 images lors du changement de catégorie
         } else {
-            setShowGallery(false); // Masquer la galerie d'abord
+            setShowGallery(false);
             setTimeout(() => {
                 setShowDescription(true);
-            }, 0); // Faire apparaître le paragraphe après le fade out de la galerie
-            setResetGallery(true); 
+            }, 0);
+            setResetGallery(true);
         }
     }, [selectedCategory]);
-    
+
     useEffect(() => {
         if (showDescription) {
             setTimeout(() => {
                 if (resetGallery) {
                     setResetGallery(false);
-                    setShowGallery(true); // Faire réapparaître la galerie avec un délai similaire
+                    setShowGallery(true);
                 }
-            }, 500); // Synchroniser la réapparition de la galerie avec la description
+            }, 500);
         }
     }, [showDescription, resetGallery]);
 
     const filteredPhotos = selectedCategory === 'TOUS'
         ? shufflePhotos(photos)
         : photos.filter(photo => photo.category === selectedCategory);
+
+    const handleShowMore = () => {
+        setVisiblePhotosCount((prevCount) => prevCount + 10); // Afficher 10 images supplémentaires
+    };
 
     return (
         <section id='Gallery'>
@@ -168,7 +161,7 @@ const Gallery = () => {
                 </div>
 
                 <div className={`gallery-container ${showGallery ? 'fade-in' : 'fade-out'}`}>
-                    {filteredPhotos.map((photo) => (
+                    {filteredPhotos.slice(0, selectedCategory === 'TOUS' ? visiblePhotosCount : filteredPhotos.length).map((photo) => (
                         <img
                             key={photo.id}
                             src={photo.url}
@@ -176,6 +169,13 @@ const Gallery = () => {
                             className="photo-thumbnail"
                         />
                     ))}
+                </div>
+                <div className="show-more">
+                {selectedCategory === 'TOUS' && visiblePhotosCount < filteredPhotos.length && (
+                    <button className="show-more-button" onClick={handleShowMore}>
+                        Afficher la suite
+                    </button>
+                )}
                 </div>
             </div>
         </section>

@@ -8,16 +8,16 @@ const Intro = () => {
     <section id='Intro'>
         <img src={logo} alt='logo Les Aiguilles du Baron, Atelier de tatouage' className='logo-intro' />
         <div className='introContact'>
-            <p className='introText'>L’atelier de tatouage <span className='goldText'>les&nbsp;aiguilles&nbsp;du&nbsp;baron</span> situé dans le quartier historique de la vieille ville de Belfort vous accueille dans ce <span className='gold-words'>cabinet de curiosités</span> feutré.
+            <p className='introText'>L’atelier de tatouage <span className='goldText'>les&nbsp;aiguilles&nbsp;du&nbsp;baron</span> situé dans le quartier historique de la vieille ville de Belfort, vous accueille dans un <span className='gold-words'>cabinet de curiosités</span> feutré.
             <br />
             <br />
-            L’alchimie présente dans ce lieu convivial de rencontre d’artistes en tous genres est propice à la création de projets de <span className='gold-words'>tatouages personnalisés</span>.
+            L&apos;alchimie qui règne dans ce lieu convivial, véritable point de rencontre pour artistes de tous horizons, est propice à la création de projets de <span className='gold-words'>tatouages personnalisés</span>.
             <br />
             <br />
-            Le tatoueur <span className='gold-words'>Chellovnik</span> partagera avec vous son expérience pour vous satisfaire dans les styles : Réalisme, Semi-réalisme, Floral, Manga, Japonais, Trash Polka, Blackwork, Graphique…
+            <span className='gold-words'>M. Chellovnik</span>, le tatoueur, mettra à profit son expérience pour vous satisfaire dans divers styles : réalisme, semi-réalisme, floral, manga, japonais, trash polka, blackwork, graphique…
             <br />
             <br />
-            Son expérience antérieure dans le milieu pharmaceutique vous assurera une <span className='gold-words'>hygiène irréprochable</span> lors de votre séance.</p>
+            Son parcours dans le milieu pharmaceutique vous garantit une <span className='gold-words'>hygiène irréprochable</span> lors de chaque séance.</p>
           <img src={photoIntro} alt="Cabine téléphonique et place de l'abattoir" className='intro-img'/>
         </div>
     </section>

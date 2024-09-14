@@ -16,7 +16,7 @@ const Atelier = () => {
             </figure>
             <div className="item-content">
               <h4>M. Chellovnik</h4>
-              <p>Je me fais toujours un plaisir de vous &laquo; aiguiller &raquo; dans votre projet tattoo. Certifié <span className='lien'><a href="https://www.facebook.com/tatoueur2.0/" target='_blank' rel="noopener noreferrer">Tatoueur2.0</a></span>, votre satisfaction est la mienne.</p>
+              <p>Le Baron m’a confié la mission de vous <span className='gold-words'>&quot;aiguiller&quot;</span> dans vos projets de tatouage. C’est un honneur pour moi que votre satisfaction soit la sienne…</p>
             </div>
         </div>
         <div className='inter-item'>
