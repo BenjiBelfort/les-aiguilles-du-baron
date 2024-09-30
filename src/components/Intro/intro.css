@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .intro-img {
@@ -27,6 +26,7 @@
     font-size: x-large;
     line-height: 1.5;
     flex: 1;
+    text-align: center;
 }
 
 .goldText {

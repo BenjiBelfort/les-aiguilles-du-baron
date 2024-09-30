@@ -6,12 +6,11 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const menuRef = useRef(null); // Référence au menu
-  const navRef = useRef(null);  // Référence à toute la navbar
+  const menuRef = useRef(null);
+  const navRef = useRef(null);
 
   const [scrolled, setScrolled] = useState(false);
 
-  // Gestion du scroll pour la navbar
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -28,13 +27,11 @@ const Navbar = () => {
     };
   }, []);
 
-  // Gestion du clic en dehors du menu
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Vérifie si le clic n'est ni sur le menu, ni sur la navbar
       if (menuRef.current && !menuRef.current.contains(event.target) &&
           navRef.current && !navRef.current.contains(event.target)) {
-        setShowMenu(false);  // Ferme le menu si clic à l'extérieur
+        setShowMenu(false);
       }
     };
 
@@ -44,7 +41,6 @@ const Navbar = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     }
 
-    // Nettoyage de l'effet
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -53,7 +49,9 @@ const Navbar = () => {
   return (
     <nav ref={navRef} className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className='navbar-container'>
-        <div className='desktopmenutitle'>
+        <div className='desktopmenutitle' onClick={() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}>
           <h1>Les Aiguilles du Baron</h1>
           <h2>Atelier de tatouage</h2>
         </div>

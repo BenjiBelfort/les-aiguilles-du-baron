@@ -4,7 +4,7 @@
     justify-content: center;
     width: 100vw;
     max-width: calc(1000px + 10px);
-    min-height: calc(200vh - 4rem);
+    min-height: calc(100vh - 4rem);
     padding: 1rem 2rem;
     box-sizing: border-box;
 }
