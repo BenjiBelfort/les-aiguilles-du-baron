@@ -1,5 +1,5 @@
 import './mainimg.css';
-import bg from '../../assets/chellovnik.jpg';
+import bg from '../../assets/chellovnik.webp';
 
 const Mainimg = () => {
   return (

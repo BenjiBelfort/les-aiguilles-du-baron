@@ -1,7 +1,7 @@
 import './atelier.css';
-import convivial from '../../assets/convivialite.jpg';
-import coworking from '../../assets/coworking.jpg';
-import tatoueur from '../../assets/tatoueur.jpg';
+import convivial from '../../assets/convivialite.webp';
+import coworking from '../../assets/coworking.webp';
+import tatoueur from '../../assets/tatoueur.webp';
 import ornement from '../../assets/ornement.png';
 
 const Atelier = () => {

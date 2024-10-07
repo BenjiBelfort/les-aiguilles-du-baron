@@ -1,6 +1,6 @@
 import './intro.css';
 import logo from '../../assets/logo.png';
-import photoIntro from '../../assets/intro-site.jpg';
+import photoIntro from '../../assets/intro-site.webp';
 
 
 const Intro = () => {

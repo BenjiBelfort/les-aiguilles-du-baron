@@ -5,7 +5,7 @@ import './contact.css';
 import facebook from '../../assets/facebook-icon.png';
 import instagram from '../../assets/instagram-icon.png';
 import map from '../../assets/map.png';
-import cabine from '../../assets/cabine-de-tatouage.jpg'; 
+import cabine from '../../assets/cabine-de-tatouage.webp'; 
 
 import emailjs from '@emailjs/browser';
 

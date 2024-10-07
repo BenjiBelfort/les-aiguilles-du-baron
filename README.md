@@ -9,4 +9,6 @@ Currently, two official plugins are available:
 
 "npm run dev" pour le live server 
 
-Utiliser "npm run deploy" pour appliquer les MAJ
+Utiliser "npm run deploy" pour appliquer les MAJ sur le site test sur GitHub (mais chnager des choses avant de le fichier vite.config.js - voir commentaires)
+
+"npm run build" avant mise en production en ligne

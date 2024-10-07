@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './popup.css';
-import popupImage from '../../assets/popup.jpg';
+import popupVideo from '../../assets/video-jeu.mp4';
 
 const Popup = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [showCloseBtn, setShowCloseBtn] = useState(false);
+  const videoRef = useRef(null); // Référence pour contrôler la vidéo
 
   useEffect(() => {
     const popupTimer = setTimeout(() => {
@@ -24,7 +25,12 @@ const Popup = () => {
   const handleClosePopup = () => {
     setShowPopup(false);
     setShowCloseBtn(false);
+    if (videoRef.current) {
+      videoRef.current.pause(); // Mettre en pause la vidéo à la fermeture
+      videoRef.current.currentTime = 0; // Remettre la vidéo au début
+    }
   };
+
 
   return (
     showPopup && (
@@ -35,7 +41,12 @@ const Popup = () => {
             onClick={handleClosePopup} >
             &times;
           </button>
-          <img src={popupImage} alt="popup" />
+          <video className="popup-image" controls autoPlay muted >
+            <source src={popupVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          {/* <img src={popupImage} alt="popup" className='popup-image'/> */}
         </div>
       </div>
     )
