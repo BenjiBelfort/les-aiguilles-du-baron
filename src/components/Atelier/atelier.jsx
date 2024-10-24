@@ -12,7 +12,7 @@ const Atelier = () => {
       <div className="atelier-container">
         <div className="item">
           <figure className="image-atelier">
-            <img src={tatoueur} alt="M. Chellovnik tatoueur" />
+            <img src={tatoueur} alt="M. Chellovnik tatoueur" loading="lazy" />
             </figure>
             <div className="item-content">
               <h4>M. Chellovnik</h4>
@@ -24,7 +24,7 @@ const Atelier = () => {
         </div>
         <div className="item">
             <figure className="image-atelier">
-              <img src={coworking} alt="espace co-working" />
+              <img src={coworking} alt="espace co-working" loading="lazy" />
             </figure>
             <div className="item-content">
               <h4>Espace Expo/Co-Working</h4>
@@ -32,11 +32,11 @@ const Atelier = () => {
             </div>
         </div>
         <div className='inter-item'>
-          <img src={ornement} alt="ornement" className='ornement-reverse'/>
+          <img src={ornement} alt="ornement" className='ornement-reverse' loading="lazy" />
         </div>
         <div className="item">
             <figure className="image-atelier">
-              <img src={convivial} alt="espace convivial" />
+              <img src={convivial} alt="espace convivial" loading="lazy" />
             </figure>
             <div className="item-content">
               <h4>Cabinet de curiosités</h4>

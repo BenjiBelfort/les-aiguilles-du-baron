@@ -42,7 +42,7 @@ const Contact = () => {
         <h3 className='contact-title'>Contact</h3>
 
           <div className="contact-wrapper">
-            <a href="tel:+33363146999"><img src={cabine} alt="Cabine téléphonique" className='cabine'/></a>
+            <a href="tel:+33363146999"><img src={cabine} alt="Cabine téléphonique" className='cabine' loading="lazy" /></a>
             <p className='contact-description'>
               <a href="tel:+33363146999" className="phone-link">03 63 14 69 99</a>
             </p>

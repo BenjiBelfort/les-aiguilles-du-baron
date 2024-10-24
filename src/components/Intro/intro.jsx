@@ -18,7 +18,7 @@ const Intro = () => {
             <br />
             <br />
             Son parcours dans le milieu pharmaceutique vous garantit une <span className='gold-words'>hygiène irréprochable</span> lors de chaque séance.</p>
-          <img src={photoIntro} alt="Cabine téléphonique et place de l'abattoir" className='intro-img'/>
+          <img src={photoIntro} alt="3 photos montrant Chellovnik en train de tatouer le dos d'un homme" className='intro-img' width={500} />
         </div>
     </section>
   )

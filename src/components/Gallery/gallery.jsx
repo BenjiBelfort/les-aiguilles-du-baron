@@ -167,6 +167,7 @@ const Gallery = () => {
                             src={photo.url}
                             alt={photo.alt}
                             className="photo-thumbnail"
+                            loading="lazy"
                         />
                     ))}
                 </div>

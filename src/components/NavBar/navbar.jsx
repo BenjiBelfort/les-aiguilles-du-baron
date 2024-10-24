@@ -52,8 +52,8 @@ const Navbar = () => {
         <div className='desktopmenutitle' onClick={() => {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }}>
-          <h1>Les Aiguilles du Baron</h1>
-          <h2>Atelier de tatouage</h2>
+          <h2>Les Aiguilles du Baron</h2>
+          <h1>Atelier de tatouage</h1>
         </div>
 
         <div className='desktopmenu'>
