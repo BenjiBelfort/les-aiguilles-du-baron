@@ -1,6 +1,6 @@
 {
-  "homepage": "https://benjibelfort.github.io/les-aiguilles-du-baron/",
-  "name": "les-aiguilles-du-baron-dev",
+  "homepage": "https://www.les-aiguilles-du-baron/",
+  "name": "les-aiguilles-du-baron",
   "private": true,
   "version": "0.0.0",
   "type": "module",

@@ -10,11 +10,17 @@ const CookiePolicy = () => {
     navigate('/');  // Redirige vers la route principale
   };
 
+  // Fonction pour gérer le clic sur le bouton Refuser
+  const handleRefuseCookies = () => {
+    localStorage.setItem('cookieConsent', 'false');  // Enregistre le refus dans le localStorage
+    navigate('/');  // Redirige vers la route principale
+  };
+
   return (
     <div className="cookie-policy">
       <h3>Politique de Cookies</h3>
       <h4>1. Identification de l’éditeur du site</h4>
-      <p>Le présent site <span>Les aiguilles du Baron</span> est édité par <span>Les aiguilles du Baron</span>, dont le siège social est situé au 5 rue du Général Roussel à BELFORT, enregistré sous le numéro [SIRET ou autre numéro d’enregistrement applicable]. Pour toute question, vous pouvez nous contacter à l’adresse suivante : lesaiguillesdubaron@gmail.com</p>
+      <p>Le présent site Les aiguilles du Baron est édité par Les aiguilles du Baron, dont le siège social est situé au 5 rue du Général Roussel à BELFORT, enregistré sous le numéro 83028280200024. Pour toute question, vous pouvez nous contacter à l’adresse suivante : lesaiguillesdubaron@gmail.com</p>
       <br />
       <br />
       <h4>2. Qu’est-ce qu’un cookie ?</h4>
@@ -51,12 +57,15 @@ const CookiePolicy = () => {
       <p>
       Dernière mise à jour : octobre 2024
       </p>
-      {/* Ajouter plus de détails sur votre politique de cookies ici */}
       
-      {/* Bouton OK pour valider */}
-      <button className="accept-cookies-btn" onClick={handleAcceptCookies}>
-        OK
-      </button>
+      <div className='consent-btn-container'>
+        <button className="yes-btn" onClick={handleAcceptCookies}>
+          OK
+        </button>
+        <button className="no-btn" onClick={handleRefuseCookies}>
+          Refuser
+        </button>
+      </div>
     </div>
   );
 };

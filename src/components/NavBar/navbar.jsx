@@ -57,9 +57,9 @@ const Navbar = () => {
         </div>
 
         <div className='desktopmenu'>
-          <Link activeClass='active' to='Intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>à propos</Link>
-          <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-40} duration={500} className='desktopMenuListItem'>galerie</Link>
-          <Link activeClass='active' to='Atelier' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>l&apos;atelier</Link>
+          <Link href="#Intro" activeClass='active' to='Intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>à propos</Link>
+          <Link href="#Gallery" activeClass='active' to='Gallery' spy={true} smooth={true} offset={-40} duration={500} className='desktopMenuListItem'>galerie</Link>
+          <Link href="#Atelier" activeClass='active' to='Atelier' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>l&apos;atelier</Link>
         </div>
 
         <button className='desktopMenuBtn' onClick={() => {
@@ -70,10 +70,10 @@ const Navbar = () => {
 
         <img src={burgerMenu} alt='Menu' className='mobMenu' onClick={() => setShowMenu(!showMenu)} />
         <div ref={menuRef} className='navMenu' style={{ display: showMenu ? 'flex' : 'none' }}>
-          <Link activeClass='active' to='Intro' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={() => setShowMenu(false)}>à propos</Link>
-          <Link activeClass='active' to='Gallery' spy={true} smooth={true} offset={-40} duration={500} className='ListItem' onClick={() => setShowMenu(false)}>galerie</Link>
-          <Link activeClass='active' to='Atelier' spy={true} smooth={true} offset={-80} duration={500} className='ListItem' onClick={() => setShowMenu(false)}>l&apos;atelier</Link>
-          <Link activeClass='active' to='Contact' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={() => setShowMenu(false)}>contact</Link>
+          <Link href="#Intro" activeClass='active' to='Intro' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={() => setShowMenu(false)}>à propos</Link>
+          <Link href="#Gallery" activeClass='active' to='Gallery' spy={true} smooth={true} offset={-40} duration={500} className='ListItem' onClick={() => setShowMenu(false)}>galerie</Link>
+          <Link href="#Atelier" activeClass='active' to='Atelier' spy={true} smooth={true} offset={-80} duration={500} className='ListItem' onClick={() => setShowMenu(false)}>l&apos;atelier</Link>
+          <Link href="#Contact" activeClass='active' to='Contact' spy={true} smooth={true} offset={-100} duration={500} className='ListItem' onClick={() => setShowMenu(false)}>contact</Link>
         </div>
       </div>
     </nav>

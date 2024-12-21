@@ -1,95 +1,16 @@
 import { useState, useEffect } from 'react';
 import CategoryDescription from './categoryDescription';
+import photosData from '../../data/photos.json';
+
 import './gallery.css';
 
-import dessinAnimaux from '../../assets/photos/dessin_tablette/dessin-animaux.webp';
-import dessinDragon from '../../assets/photos/dessin_tablette/dessin-dragon.webp';
-import dessinIndien from '../../assets/photos/dessin_tablette/dessin-indien.webp';
-import dessinJaponais from '../../assets/photos/dessin_tablette/dessin-japonais.webp';
-import dessinPierreCroix from '../../assets/photos/dessin_tablette/dessin-Pierre_Croix.webp';
-import dessinRobot from '../../assets/photos/dessin_tablette/dessin-robot.webp';
-import dessinVisage from '../../assets/photos/dessin_tablette/dessin-visage.webp';
-import floralBras from '../../assets/photos/floral/floral-bras.webp';
-import floralDos1 from '../../assets/photos/floral/floral-dos1.webp';
-import floralEpaule1 from '../../assets/photos/floral/floral-epaule1.webp';
-import floralEpaule2 from '../../assets/photos/floral/floral-epaule2.webp';
-import graphiqueInsecte from '../../assets/photos/graphique/graphique-insecte.webp';
-import graphiqueMasque from '../../assets/photos/graphique/graphique-masque.webp';
-import graphiqueRobot1 from '../../assets/photos/graphique/graphique-robot1.webp';
-import graphiqueRobot2 from '../../assets/photos/graphique/graphique-robot2.webp';
-import mangaAkira from '../../assets/photos/manga/manga-Akira.webp';
-import mangaDragonBall from '../../assets/photos/manga/manga-dragon-ball.webp';
-import mangaAlbator from '../../assets/photos/manga/manga-Albator.webp';
-import mangaDragon from '../../assets/photos/manga/manga-dragon.webp';
-import mangaGreatWave from '../../assets/photos/manga/manga-great-wave.webp';
-import mangaSaintSeiya from '../../assets/photos/manga/manga-saint-seiya.webp';
-import mangaVisage1 from '../../assets/photos/manga/manga-visage1.webp';
-import mangaVisage2 from '../../assets/photos/manga/manga-visage2.webp';
-import realismeCroix1 from '../../assets/photos/realisme/realisme-croix1.webp';
-import realismeJohnnyHallyday from '../../assets/photos/realisme/realisme-Johnny-Hallyday.webp';
-import realismeSamourai from '../../assets/photos/realisme/realisme-samourai.webp';
-import realismeSamuelLJackson from '../../assets/photos/realisme/realisme-Samuel-L-Jackson.webp';
-import realismeVisage from '../../assets/photos/realisme/realisme-visage.webp';
-import semiRealismeBonnet from '../../assets/photos/semi-realisme/semi-realisme-bonnet.webp';
-import semiRealismeCalaveras from '../../assets/photos/semi-realisme/semi-realisme-calaveras.webp';
-import semiRealismeElephant from '../../assets/photos/semi-realisme/semi-realisme-elephant.webp';
-import semiRealismeHedwige from '../../assets/photos/semi-realisme/semi-realisme-Hedwige.webp';
-import semiRealismeOurs from '../../assets/photos/semi-realisme/semi-realisme-ours.webp';
-import semiRealismeSpartiate from '../../assets/photos/semi-realisme/semi-realisme-spartiate.webp';
-import semiRealismeVisage from '../../assets/photos/semi-realisme/semi-realisme-visage.webp';
-
-import dessinErotica from '../../assets/photos/dessin_tablette/dessin-erotica.webp';
-import dessinSkateur from '../../assets/photos/dessin_tablette/dessin-skateur.webp'; 
-import dessinTaxiDriver from '../../assets/photos/dessin_tablette/dessin-taxidriver.webp';
-
-const initialPhotos = [
-    { id: 4, category: 'dessin', url: dessinAnimaux, alt: 'dessin d&apos;un crabe' },
-    { id: 5, category: 'dessin', url: dessinDragon, alt: 'dessin d&apos;un dragon entouré de fleurs' },
-    { id: 10, category: 'dessin', url: dessinIndien, alt: 'dessin tête de mort indien' },
-    { id: 11, category: 'dessin', url: dessinJaponais, alt: 'dessin de carpes dans un style japonais' },
-    { id: 12, category: 'dessin', url: dessinPierreCroix, alt: 'dessin d&apos;un homme crucifié' },
-    { id: 13, category: 'dessin', url: dessinRobot, alt: 'dessin d&apos;un robot' },
-    { id: 14, category: 'dessin', url: dessinVisage, alt: 'dessin d&apos;un homme qui fume' },
-    { id: 44, category: 'dessin', url: dessinErotica, alt: 'dessin erotica en panavision' },
-    { id: 45, category: 'dessin', url: dessinTaxiDriver, alt: 'dessin erotica en panavision' },
-    { id: 46, category: 'dessin', url: dessinSkateur, alt: 'dessin erotica en panavision' },
-    { id: 15, category: 'floral', url: floralBras, alt: 'fleur tatouée sur un avant bras' },
-    { id: 16, category: 'floral', url: floralDos1, alt: 'fleur tatouée sur le dos d&apos;une femme' },
-    { id: 19, category: 'floral', url: floralEpaule1, alt: 'fleur tatouée sur l&apos;épaule d&apos;une femme' },
-    { id: 20, category: 'floral', url: floralEpaule2, alt: 'rose tatouée sur l&apos;épaule d&apos;une femme' },
-    { id: 24, category: 'graphique', url: graphiqueRobot2, alt: 'robot tatoué sur un mollet photo en couleur' },
-    { id: 23, category: 'graphique', url: graphiqueRobot1, alt: 'robot tatoué sur un mollet photo en noir et blanc' },
-    { id: 21, category: 'graphique', url: graphiqueInsecte, alt: 'dessin d&apos;un insecte' },
-    { id: 22, category: 'graphique', url: graphiqueMasque, alt: 'dessin d&apos;un masque à gaz sur une tête de mort' },
-    { id: 28, category: 'manga', url: mangaGreatWave, alt: 'Great Wave d&aposHokusai tatouée sur un mollet' },
-    { id: 27, category: 'manga', url: mangaDragon, alt: 'tatouage d&apos;un dragon style manga sur le dos' },
-    { id: 47, category: 'manga', url: mangaSaintSeiya, alt: 'tatouage Saint Seiya' },
-    { id: 29, category: 'manga', url: mangaDragonBall, alt: 'dessin dragon ball' },
-    { id: 25, category: 'manga', url: mangaAkira, alt: 'dessin d&apos;un homme style manga' },
-    { id: 26, category: 'manga', url: mangaAlbator, alt: 'tatouage Albator' },
-    { id: 30, category: 'manga', url: mangaVisage1, alt: 'tatouage style manga visage de femme dans un champ' },
-    { id: 31, category: 'manga', url: mangaVisage2, alt: 'tatouage style manga visage de femme' },
-    { id: 201, category: 'realisme', url: semiRealismeElephant, alt: 'tatouage elephant sur l&aposomoplate' },
-    { id: 202, category: 'realisme', url: semiRealismeSpartiate, alt: 'tatouage d&aposun spartiate et de Poséidon' },
-    { id: 203, category: 'realisme', url: semiRealismeCalaveras, alt: 'tatouage calaveras style mexicain' },
-    { id: 204, category: 'realisme', url: realismeCroix1, alt: 'tatouage d&aposune croix sur le dos' },
-    { id: 205, category: 'realisme', url: realismeSamourai, alt: 'samourai au japon médiéval' },
-    { id: 206, category: 'realisme', url: realismeSamuelLJackson, alt: 'tatouage réalisme de Samuel L. Jackson' },
-    { id: 207, category: 'realisme', url: semiRealismeBonnet, alt: 'tatouage d&aposun bonnet' },
-    { id: 208, category: 'realisme', url: semiRealismeHedwige, alt: 'tatouage de Hedwige la chouette d&aposHarry Potter' },
-    { id: 209, category: 'realisme', url: realismeVisage, alt: 'tatouage visage d&aposenfant' },
-    { id: 210, category: 'realisme', url: semiRealismeOurs, alt: 'tatouage d&aposun ours sur l&aposépaule d&aposun homme' },
-    { id: 211, category: 'realisme', url: semiRealismeVisage, alt: 'tatouage d&aposun masque de visage' },
-    { id: 212, category: 'realisme', url: realismeJohnnyHallyday, alt: 'tatouage Johnny Hallyday sur un mollet' },
-];
-
 const categories = [
-    { key: 'TOUS', label: 'Toutes les catégories' },
-    { key: 'realisme', label: 'Réalisme, Semi-réalisme' },
-    { key: 'manga', label: 'Manga, Japonais' },
-    { key: 'graphique', label: 'Graphique' },
-    { key: 'dessin', label: 'Dessins & Projets' },
-    { key: 'floral', label: 'Floral' }
+    { key: 'realisme', label: 'Réalisme / Semi-réalisme' },
+    { key: 'manga', label: 'Manga / Japonais' },
+    { key: 'graphique', label: 'Sketch / Graphique' },
+    { key: 'trash', label: 'Trash Polka / Pop Culture' },
+    { key: 'floral', label: 'Floral / Fine line' },
+    { key: 'autre', label: 'Autres' }
 ];
 
 const shufflePhotos = (photosArray) => {
@@ -99,49 +20,36 @@ const shufflePhotos = (photosArray) => {
 };
 
 const Gallery = () => {
-    const [photos] = useState(initialPhotos);
-    const [selectedCategory, setSelectedCategory] = useState('TOUS');
-    const [showDescription, setShowDescription] = useState(true);
-    const [showGallery, setShowGallery] = useState(true);
-    const [resetGallery, setResetGallery] = useState(false);
-    const [visiblePhotosCount, setVisiblePhotosCount] = useState(10); // Nouvel état pour limiter le nombre d'images affichées
+    const [photos, setPhotos] = useState([]); // Photos chargées depuis le JSON
+    const [selectedCategory, setSelectedCategory] = useState(null); // Pas de catégorie sélectionnée au départ
+    const [visiblePhotosCount, setVisiblePhotosCount] = useState(10); // Limite initiale pour les photos visibles
 
     useEffect(() => {
-        if (selectedCategory === 'TOUS') {
-            setShowDescription(false);
-            setTimeout(() => setShowGallery(true), 500);
-            setResetGallery(false);
-            setVisiblePhotosCount(10); // Réinitialiser à 10 images lors du changement de catégorie
+        // Charger les photos au chargement initial de la page
+        setPhotos(shufflePhotos(photosData));
+    }, []);
+
+    const handleCategorySelection = (category) => {
+        setSelectedCategory(category);
+
+        // Si une catégorie est sélectionnée, afficher toutes les photos de cette catégorie
+        if (category) {
+            setVisiblePhotosCount(Infinity); // Pas de limite
         } else {
-            setShowGallery(false);
-            setTimeout(() => {
-                setShowDescription(true);
-            }, 0);
-            setResetGallery(true);
+            setVisiblePhotosCount(10); // Réinitialiser à 10 photos visibles pour la vue "TOUS"
         }
-    }, [selectedCategory]);
+    };
 
-    useEffect(() => {
-        if (showDescription) {
-            setTimeout(() => {
-                if (resetGallery) {
-                    setResetGallery(false);
-                    setShowGallery(true);
-                }
-            }, 500);
-        }
-    }, [showDescription, resetGallery]);
-
-    const filteredPhotos = selectedCategory === 'TOUS'
-        ? shufflePhotos(photos)
-        : photos.filter(photo => photo.category === selectedCategory);
+    const filteredPhotos = selectedCategory
+        ? photos.filter(photo => photo.category === selectedCategory)
+        : photos; // Toutes les photos si aucune catégorie sélectionnée
 
     const handleShowMore = () => {
-        setVisiblePhotosCount((prevCount) => prevCount + 10); // Afficher 10 images supplémentaires
+        setVisiblePhotosCount((prevCount) => prevCount + 10);
     };
 
     return (
-        <section id='Gallery'>
+        <section id="Gallery">
             <div>
                 <h3>galerie</h3>
                 <div className="filters">
@@ -149,19 +57,19 @@ const Gallery = () => {
                         <button
                             key={category.key}
                             className={`filter-button ${selectedCategory === category.key ? 'active' : ''}`}
-                            onClick={() => setSelectedCategory(category.key)}
+                            onClick={() => handleCategorySelection(category.key)}
                         >
                             {category.label}
                         </button>
                     ))}
                 </div>
 
-                <div className={`category-description-container ${showDescription ? 'fade-in' : 'fade-out'}`}>
-                    <CategoryDescription selectedCategory={selectedCategory} />
+                <div className="category-description-container">
+                    <CategoryDescription selectedCategory={selectedCategory || 'TOUS'} />
                 </div>
 
-                <div className={`gallery-container ${showGallery ? 'fade-in' : 'fade-out'}`}>
-                    {filteredPhotos.slice(0, selectedCategory === 'TOUS' ? visiblePhotosCount : filteredPhotos.length).map((photo) => (
+                <div className="gallery-container">
+                    {filteredPhotos.slice(0, visiblePhotosCount).map((photo) => (
                         <img
                             key={photo.id}
                             src={photo.url}
@@ -171,16 +79,18 @@ const Gallery = () => {
                         />
                     ))}
                 </div>
-                <div className="show-more">
-                {selectedCategory === 'TOUS' && visiblePhotosCount < filteredPhotos.length && (
-                    <button className="show-more-button" onClick={handleShowMore}>
-                        Afficher la suite
-                    </button>
+
+                {/* Bouton "Afficher la suite" uniquement dans la vue initiale (TOUS) */}
+                {!selectedCategory && visiblePhotosCount < filteredPhotos.length && (
+                    <div className="show-more">
+                        <button className="show-more-button" onClick={handleShowMore}>
+                            Afficher la suite
+                        </button>
+                    </div>
                 )}
-                </div>
             </div>
         </section>
     );
-}
+};
 
 export default Gallery;

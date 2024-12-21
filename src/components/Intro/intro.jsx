@@ -8,7 +8,7 @@ const Intro = () => {
     <section id='Intro'>
         <img src={logo} alt='logo Les Aiguilles du Baron, Atelier de tatouage' className='logo-intro' />
         <div className='introContact'>
-            <p className='introText'>L’atelier de tatouage <span className='goldText'>les&nbsp;aiguilles&nbsp;du&nbsp;baron</span> situé dans le quartier historique de la vieille ville de Belfort, vous accueille dans un <span className='gold-words'>cabinet de curiosités</span> feutré.
+            <p className='introText'>L’atelier de tatouage <h2>les&nbsp;aiguilles&nbsp;du&nbsp;baron</h2> situé dans le quartier historique de la vieille ville de Belfort, vous accueille dans un <span className='gold-words'>cabinet de curiosités</span> feutré.
             <br />
             <br />
             L&apos;alchimie qui règne dans ce lieu convivial, véritable point de rencontre pour artistes de tous horizons, est propice à la création de projets de <span className='gold-words'>tatouages personnalisés</span>.

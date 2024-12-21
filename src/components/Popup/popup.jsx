@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './popup.css';
-// import popupVideo from '../../assets/video-jeu.mp4';
+import popupVideo from '../../assets/video-noel.mp4';
 
 const Popup = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -42,10 +42,10 @@ const Popup = () => {
             &times;
           </button>
           
-          {/* <video className="popup-image" controls autoPlay muted >
+          <video className="popup-image" controls autoPlay muted >
             <source src={popupVideo} type="video/mp4" />
             Your browser does not support the video tag.
-          </video> */}
+          </video>
 
           {/* <img src={popupImage} alt="popup" className='popup-image'/> */}
         </div>

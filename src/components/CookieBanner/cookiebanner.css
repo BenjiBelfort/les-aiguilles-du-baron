@@ -30,10 +30,16 @@
 .accept-cookies-btn {
     margin-left: 10px;
     padding: 5px 10px;
-    background-color: #4CAF50;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-  
+
+.yes-btn {
+    background-color: #0652DD;
+}
+
+.no-btn {
+    background-color: #d63031;
+}

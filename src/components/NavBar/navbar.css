@@ -57,6 +57,11 @@ h1 {
     border-bottom: 2px solid #d4bf79;
 }
 
+a {
+    color: inherit; /* Prend la couleur de l'élément parent */
+    text-decoration: none; /* Enlève le soulignement */
+}
+
 .active {
     color: #d4bf79;
     padding-bottom: 0.5rem;
