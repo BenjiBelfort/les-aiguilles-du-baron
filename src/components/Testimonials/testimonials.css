@@ -1,0 +1,60 @@
+#Testimonials {
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 2rem;
+    overflow: hidden;
+    height: 200px;
+}
+
+  
+  .carousel {
+    max-width: 100%;
+    overflow: hidden; /* Cache les éléments en dehors de la fenêtre */
+    position: relative;
+  }
+  
+  .testimonials-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .testimonial {
+    min-width: 100%; /* Chaque avis occupe 100% de la largeur */
+    box-sizing: border-box;
+    padding: 1rem;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .testimonial-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonial-signature {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+
+  /* Effet de disparition */
+  .fade-out {
+    opacity: 0;
+  }
+  
+  /* Effet d'apparition */
+  .fade-in {
+    opacity: 1;
+  }

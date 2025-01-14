@@ -6,6 +6,7 @@ import Navbar from './components/NavBar/navbar';
 import Intro from './components/Intro/intro';
 import Mainimg from './components/MainImg/mainimg';
 import Mainlogo from './components/Mainlogo/mainlogo';
+// import Testimonials from './components/Testimonials/testimonials'
 import Gallery from './components/Gallery/gallery';
 import Atelier from './components/Atelier/atelier';
 import Contact from './components/Contact/contact';
@@ -50,6 +51,7 @@ const App = () => {
               <Mainimg />
               <Mainlogo />
               <Intro />
+              {/* <Testimonials /> */}
               <Gallery />
               <Atelier />
               <Contact />

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './popup.css';
-import popupVideo from '../../assets/video-noel.mp4';
+import popupVideo from '../../assets/video-BA.mp4';
 
 const Popup = () => {
   const [showPopup, setShowPopup] = useState(false);

@@ -21,28 +21,35 @@
     { "id": 120, "category": "realisme", "url": "/photos/realisme/realisme-labyrinthe.webp", "alt": "tatouage d'un labyrinthe sur la cuisse" },
     { "id": 121, "category": "realisme", "url": "/photos/realisme/realisme-bobine-film.webp", "alt": "tatouage d'une bobine de film sur l'épaule" },
     { "id": 122, "category": "realisme", "url": "/photos/realisme/realisme-avion.webp", "alt": "tatouage d'un avion sur l'épaule" },
-    { "id": 201, "category": "manga", "url": "/photos/manga/manga-japonais.webp", "alt": "dessin de carpes dans un style japonais" },
-    { "id": 202, "category": "manga", "url": "/photos/manga/manga-great-wave.webp", "alt": "Great Wave d'Hokusai tatouée sur un mollet" },
-    { "id": 203, "category": "manga", "url": "/photos/manga/manga-dragon.webp", "alt": "tatouage d'un dragon style manga sur le dos" },
-    { "id": 204, "category": "manga", "url": "/photos/manga/manga-saint-seiya.webp", "alt": "tatouage Saint Seiya" },
-    { "id": 205, "category": "manga", "url": "/photos/manga/manga-dragon-ball.webp", "alt": "dessin dragon ball" },
-    { "id": 206, "category": "manga", "url": "/photos/manga/manga-Akira.webp", "alt": "dessin d'un homme style manga" },
-    { "id": 207, "category": "manga", "url": "/photos/manga/manga-Albator.webp", "alt": "tatouage Albator" },
-    { "id": 208, "category": "manga", "url": "/photos/manga/manga-visage1.webp", "alt": "tatouage style manga visage de femme dans un champ" },
-    { "id": 209, "category": "manga", "url": "/photos/manga/manga-vagues.webp", "alt": "tatouage style yakuza vagues sur l'épaule" },
-    { "id": 210, "category": "manga", "url": "/photos/manga/manga-visage2.webp", "alt": "tatouage style manga visage de femme" },
-    { "id": 301, "category": "graphique", "url": "/photos/dessin_tablette/dessin-animaux.webp", "alt": "dessin d'un crabe" },
-    { "id": 302, "category": "graphique", "url": "/photos/dessin_tablette/dessin-robot.webp", "alt": "dessin d'un robot" },
-    { "id": 303, "category": "graphique", "url": "/photos/dessin_tablette/dessin-visage.webp", "alt": "dessin d'un homme qui fume" },
-    { "id": 304, "category": "graphique", "url": "/photos/dessin_tablette/dessin-skateur.webp", "alt": "dessin skateur" },
-    { "id": 305, "category": "graphique", "url": "/photos/graphique/graphique-robot2.webp", "alt": "robot tatoué sur un mollet photo en couleur" },
-    { "id": 306, "category": "graphique", "url": "/photos/graphique/graphique-robot1.webp", "alt": "robot tatoué sur un mollet photo en noir et blanc" },
-    { "id": 307, "category": "graphique", "url": "/photos/graphique/graphique-insecte.webp", "alt": "dessin d'un insecte" },
-    { "id": 308, "category": "graphique", "url": "/photos/graphique/graphique-masque.webp", "alt": "dessin d'un masque à gaz sur une tête de mort" },
-    { "id": 309, "category": "graphique", "url": "/photos/graphique/graphique-robot1.webp", "alt": "robot tatoué sur un mollet photo en noir et blanc" },
-    { "id": 310, "category": "graphique", "url": "/photos/graphique/graphique-insecte.webp", "alt": "dessin d'un insecte" },
-    { "id": 311, "category": "graphique", "url": "/photos/graphique/graphique-masque.webp", "alt": "dessin d'un masque à gaz sur une tête de mort" },
-    { "id": 312, "category": "graphique", "url": "/photos/graphique/graphique-calaveras.webp", "alt": "tatouage calaveras style mexicain" },
+
+
+
+    { "id": 201, "category": "manga", "url": "/photos/manga/manga-guts.webp", "alt": "tatouage style manga visage de femme" },
+    { "id": 202, "category": "manga", "url": "/photos/manga/manga-yakusa.webp", "alt": "tatouage style yakusa sur l'épaule" },
+    { "id": 203, "category": "manga", "url": "/photos/manga/manga-dragon-pokemon.webp", "alt": "tatouage dragon pokemon dos" },
+    { "id": 204, "category": "manga", "url": "/photos/manga/manga-japonais-couleur.webp", "alt": "tatouage style japonais yakusa carpe koï couleur" },
+
+    { "id": 205, "category": "manga", "url": "/photos/manga/manga-japonais.webp", "alt": "dessin de carpes dans un style japonais" },
+    { "id": 206, "category": "manga", "url": "/photos/manga/manga-great-wave.webp", "alt": "Great Wave d'Hokusai tatouée sur un mollet" },
+
+    { "id": 207, "category": "manga", "url": "/photos/manga/manga-dragon-ball.webp", "alt": "dessin dragon ball" },
+    { "id": 209, "category": "manga", "url": "/photos/manga/manga-Akira.webp", "alt": "dessin d'un homme style manga" },
+    { "id": 210, "category": "manga", "url": "/photos/manga/manga-Albator.webp", "alt": "tatouage Albator" },
+    { "id": 211, "category": "manga", "url": "/photos/manga/manga-visage1.webp", "alt": "tatouage style manga visage de femme dans un champ" },
+    { "id": 212, "category": "manga", "url": "/photos/manga/manga-visage2.webp", "alt": "tatouage style manga visage de femme" },
+
+
+
+    { "id": 301, "category": "graphique", "url": "/photos/graphique/graphique-robot2.webp", "alt": "robot tatoué sur un mollet photo en couleur" },
+    { "id": 302, "category": "graphique", "url": "/photos/graphique/graphique-calaveras.webp", "alt": "tatouage calaveras style mexicain" },
+    { "id": 303, "category": "graphique", "url": "/photos/autre/autre-francis.webp", "alt": "bras tatoué avec le prénom Francis" },
+    { "id": 304, "category": "graphique", "url": "/photos/graphique/graphique-triangle-canif.webp", "alt": "mollet tatoué Corse compas et canif" },
+    { "id": 305, "category": "graphique", "url": "/photos/graphique/graphique-robot1.webp", "alt": "robot tatoué sur un mollet photo en noir et blanc" },
+    { "id": 311, "category": "graphique", "url": "/photos/dessin_tablette/dessin-animaux.webp", "alt": "dessin d'un crabe" },
+    { "id": 312, "category": "graphique", "url": "/photos/dessin_tablette/dessin-visage.webp", "alt": "dessin d'un homme qui fume" },
+    { "id": 313, "category": "graphique", "url": "/photos/dessin_tablette/dessin-skateur.webp", "alt": "dessin skateur" },
+    { "id": 315, "category": "graphique", "url": "/photos/dessin_tablette/dessin-robot.webp", "alt": "dessin d'un robot" },
+    { "id": 316, "category": "graphique", "url": "/photos/graphique/graphique-insecte.webp", "alt": "dessin d'un insecte" },
     { "id": 401, "category": "trash", "url": "/photos/trash/trash-erotica.webp", "alt": "dessin erotica en panavision" },
     { "id": 402, "category": "trash", "url": "/photos/trash/trash-taxidriver.webp", "alt": "dessin taxi driver" },
     { "id": 501, "category": "floral", "url": "/photos/dessin_tablette/dessin-dragon.webp", "alt": "dessin d'un dragon entouré de fleurs" },
@@ -50,6 +57,15 @@
     { "id": 503, "category": "floral", "url": "/photos/floral/floral-dos1.webp", "alt": "fleur tatouée sur le dos d'une femme" },
     { "id": 504, "category": "floral", "url": "/photos/floral/floral-epaule1.webp", "alt": "fleur tatouée sur l'épaule d'une femme" },
     { "id": 505, "category": "floral", "url": "/photos/floral/floral-epaule2.webp", "alt": "rose tatouée sur l'épaule d'une femme" },
-    { "id": 601, "category": "autre", "url": "/photos/autre/autre-indien.webp", "alt": "dessin tête de mort indien" },
-    { "id": 602, "category": "autre", "url": "/photos/autre/autre-francis.webp", "alt": "bras tatoué avec le prénom Francis" }
+
+    { "id": 601, "category": "atelier", "url": "/photos/atelier/atelier-cafe.webp", "alt": "tasse de café" },
+    { "id": 602, "category": "atelier", "url": "/photos/atelier/atelier-terrasse.webp", "alt": "terrasse de l'atlier" },
+    { "id": 603, "category": "atelier", "url": "/photos/atelier/atelier-siege.webp", "alt": "siege de tatouage" },
+    { "id": 604, "category": "atelier", "url": "/photos/atelier/atelier-darts.webp", "alt": "cible de flechettes" },
+    { "id": 605, "category": "atelier", "url": "/photos/atelier/atelier-place-abattoir.webp", "alt": "place de l'abattoir et mannequin" },
+    { "id": 606, "category": "atelier", "url": "/photos/atelier/atelier-finnegans.webp", "alt": "soirée tatoo au finnegans" }
+
+
+
+
 ]

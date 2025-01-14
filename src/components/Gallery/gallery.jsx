@@ -7,16 +7,20 @@ import './gallery.css';
 const categories = [
     { key: 'realisme', label: 'Réalisme / Semi-réalisme' },
     { key: 'manga', label: 'Manga / Japonais' },
-    { key: 'graphique', label: 'Sketch / Graphique' },
+    { key: 'graphique', label: 'Sketch / Graphique / Lettrage' },
     { key: 'trash', label: 'Trash Polka / Pop Culture' },
     { key: 'floral', label: 'Floral / Fine line' },
-    { key: 'autre', label: 'Autres' }
+    { key: 'atelier', label: "Vie de l'Atelier" }
 ];
 
 const shufflePhotos = (photosArray) => {
     return photosArray
         .map(photo => ({ ...photo, sortKey: Math.random() }))
         .sort((a, b) => a.sortKey - b.sortKey);
+};
+
+const sortById = (photosArray) => {
+    return [...photosArray].sort((a, b) => a.id - b.id);
 };
 
 const Gallery = () => {
@@ -41,8 +45,8 @@ const Gallery = () => {
     };
 
     const filteredPhotos = selectedCategory
-        ? photos.filter(photo => photo.category === selectedCategory)
-        : photos; // Toutes les photos si aucune catégorie sélectionnée
+        ? sortById(photos.filter(photo => photo.category === selectedCategory)) // Trier par id si une catégorie est sélectionnée
+        : photos; // Toutes les photos mélangées si aucune catégorie sélectionnée
 
     const handleShowMore = () => {
         setVisiblePhotosCount((prevCount) => prevCount + 10);

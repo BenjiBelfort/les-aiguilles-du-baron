@@ -103,7 +103,72 @@
     text-align: center;
 }
 
-@media screen and (max-width:800px) {
+.completed-puzzle-image {
+    width: 308px;
+    height: 308px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.completed-puzzle {
+    position: relative;
+    width: 308px;
+    height: 308px;
+}
+
+.puzzle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 4px;
+}
+
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.empty-piece {
+    background-color: #ffffff;
+}
+
+.captcha-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+/* Texte du CAPTCHA */
+.captcha-description {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.captcha-completed {
+    color: green;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
     .contact-map-wrapper {
         flex-direction: column;
     }
