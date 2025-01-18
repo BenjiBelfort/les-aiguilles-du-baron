@@ -1,26 +1,36 @@
 [
-    { "id": 101, "category": "realisme", "url": "/photos/dessin_tablette/dessin-Pierre_Croix.webp", "alt": "dessin d'un homme crucifié" },
-    { "id": 102, "category": "realisme", "url": "/photos/semi-realisme/semi-realisme-elephant.webp", "alt": "tatouage elephant sur l'omoplate" },
-    { "id": 103, "category": "realisme", "url": "/photos/semi-realisme/semi-realisme-spartiate.webp", "alt": "tatouage d'un spartiate et de Poséidon" },
-    { "id": 104, "category": "realisme", "url": "/photos/realisme/realisme-croix1.webp", "alt": "tatouage d'une croix sur le dos" },
-    { "id": 105, "category": "realisme", "url": "/photos/realisme/realisme-samourai.webp", "alt": "samourai au japon médiéval" },
-    { "id": 106, "category": "realisme", "url": "/photos/realisme/realisme-Samuel-L-Jackson.webp", "alt": "tatouage réalisme de Samuel L. Jackson" },
-    { "id": 107, "category": "realisme", "url": "/photos/semi-realisme/semi-realisme-bonnet.webp", "alt": "tatouage d'un bonnet" },
-    { "id": 108, "category": "realisme", "url": "/photos/semi-realisme/semi-realisme-Hedwige.webp", "alt": "tatouage de Hedwige la chouette d'Harry Potter" },
-    { "id": 109, "category": "realisme", "url": "/photos/realisme/realisme-visage.webp", "alt": "tatouage visage d'enfant" },
-    { "id": 110, "category": "realisme", "url": "/photos/semi-realisme/semi-realisme-ours.webp", "alt": "tatouage d'un ours sur l'épaule d'un homme" },
-    { "id": 111, "category": "realisme", "url": "/photos/semi-realisme/semi-realisme-visage.webp", "alt": "tatouage d'un masque de visage" },
-    { "id": 112, "category": "realisme", "url": "/photos/realisme/realisme-Johnny-Hallyday.webp", "alt": "tatouage Johnny Hallyday sur un mollet" },
-    { "id": 113, "category": "realisme", "url": "/photos/realisme/realisme-gorille.webp", "alt": "tatouage d'un gorille sur l'épaule" },
-    { "id": 114, "category": "realisme", "url": "/photos/realisme/realisme-bonzai.webp", "alt": "tatouage d'un bonzai sur le bras" },
-    { "id": 115, "category": "realisme", "url": "/photos/realisme/realisme-ange.webp", "alt": "tatouage d'un ange sur l'avant bras" },
-    { "id": 116, "category": "realisme", "url": "/photos/realisme/realisme-god.webp", "alt": "tatouage d'un dieu sur l'épaule" },
-    { "id": 117, "category": "realisme", "url": "/photos/realisme/realisme-Michel-Ange.webp", "alt": "tatouage des mains de Michel-Ange" },
-    { "id": 118, "category": "realisme", "url": "/photos/realisme/realisme-zeus.webp", "alt": "tatouage Zeus sur le pec" },
-    { "id": 119, "category": "realisme", "url": "/photos/realisme/realisme-spartiates.webp", "alt": "tatouage Spartiates sur le bras" },
-    { "id": 120, "category": "realisme", "url": "/photos/realisme/realisme-labyrinthe.webp", "alt": "tatouage d'un labyrinthe sur la cuisse" },
-    { "id": 121, "category": "realisme", "url": "/photos/realisme/realisme-bobine-film.webp", "alt": "tatouage d'une bobine de film sur l'épaule" },
-    { "id": 122, "category": "realisme", "url": "/photos/realisme/realisme-avion.webp", "alt": "tatouage d'un avion sur l'épaule" },
+    { "id": 101, "category": "realisme", "url": "/photos/realisme/pirate.webp", "alt": "bateau pirate tatoué sur le mollet" },
+    { "id": 102, "category": "realisme", "url": "/photos/realisme/realisme-ange.webp", "alt": "tatouage d'un ange sur l'avant bras" },
+    { "id": 103, "category": "realisme", "url": "/photos/realisme/realisme-Michel-Ange.webp", "alt": "tatouage des mains de Michel-Anges" },
+    { "id": 104, "category": "realisme", "url": "/photos/realisme/realisme-bonzai.webp", "alt": "tatouage d'un bonzai sur le bras" },
+    { "id": 105, "category": "realisme", "url": "/photos/realisme/realisme-god.webp", "alt": "tatouage d'un dieu sur l'épaule" },
+    { "id": 106, "category": "realisme", "url": "/photos/realisme/realisme-avion.webp", "alt": "tatouage d'un avion sur l'épaule" },
+    { "id": 107, "category": "realisme", "url": "/photos/realisme/realisme-bobine-film.webp", "alt": "tatouage d'une bobine de film sur l'épaule" },
+    { "id": 108, "category": "realisme", "url": "/photos/realisme/realisme-elephant.webp", "alt": "tatouage elephant sur l'omoplate" },
+    { "id": 109, "category": "realisme", "url": "/photos/realisme/realisme-gorille.webp", "alt": "tatouage d'un gorille sur l'épaule" },
+    { "id": 110, "category": "realisme", "url": "/photos/realisme/realisme-spartiate.webp", "alt": "tatouage d'un spartiate et de Poséidon" },
+    { "id": 111, "category": "realisme", "url": "/photos/realisme/poseidon.webp", "alt": "tatouage Poseidon sur le pec" },
+    { "id": 112, "category": "realisme", "url": "/photos/realisme/realisme-spartiates.webp", "alt": "tatouage Spartiates sur le bras" },
+    { "id": 113, "category": "realisme", "url": "/photos/realisme/chat-aile.webp", "alt": "chat ailé tatoué sur la poitrine" },
+    { "id": 114, "category": "realisme", "url": "/photos/realisme/realisme-labyrinthe.webp", "alt": "tatouage d'un labyrinthe sur la cuisse" },
+    { "id": 115, "category": "realisme", "url": "/photos/realisme/realisme-Samuel-L-Jackson.webp", "alt": "tatouage réalisme de Samuel L. Jackson" },
+    { "id": 116, "category": "realisme", "url": "/photos/realisme/realisme-visage.webp", "alt": "tatouage visage d'enfant" },
+    { "id": 117, "category": "realisme", "url": "/photos/realisme/ours.webp", "alt": "tatouage d'un ours sur l'épaule d'un homme" },
+    { "id": 118, "category": "realisme", "url": "/photos/realisme/realisme-bonnet.webp", "alt": "tatouage d'un bonnet" },
+    { "id": 119, "category": "realisme", "url": "/photos/realisme/realisme-Hedwige.webp", "alt": "tatouage de Hedwige la chouette d'Harry Potter" },
+    { "id": 120, "category": "realisme", "url": "/photos/realisme/realisme-Johnny-Hallyday.webp", "alt": "tatouage Johnny Hallyday sur un mollet" },
+    { "id": 121, "category": "realisme", "url": "/photos/realisme/realisme-croix1.webp", "alt": "tatouage d'une croix sur le dos" },
+    { "id": 122, "category": "realisme", "url": "/photos/realisme/dessin-Pierre_Croix.webp", "alt": "dessin d'un homme crucifié" },
+    { "id": 123, "category": "realisme", "url": "/photos/realisme/viking.webp", "alt": "Viking" },
+    { "id": 124, "category": "realisme", "url": "/photos/realisme/arcane.webp", "alt": "personnages Arcane" },
+    { "id": 125, "category": "realisme", "url": "/photos/realisme/deadpool2.webp", "alt": "Deadpool et Wolverine 2", "reserved": true },
+    { "id": 126, "category": "realisme", "url": "/photos/realisme/deadpool.webp", "alt": "Deadpool et Wolverine 1" },
+    { "id": 127, "category": "realisme", "url": "/photos/realisme/gambling.webp", "alt": "personnage Gambling" },
+
+
+
+
+
 
 
 
@@ -37,12 +47,14 @@
     { "id": 210, "category": "manga", "url": "/photos/manga/manga-Albator.webp", "alt": "tatouage Albator" },
     { "id": 211, "category": "manga", "url": "/photos/manga/manga-visage1.webp", "alt": "tatouage style manga visage de femme dans un champ" },
     { "id": 212, "category": "manga", "url": "/photos/manga/manga-visage2.webp", "alt": "tatouage style manga visage de femme" },
+    { "id": 213, "category": "manga", "url": "/photos/manga/atomic-girl.webp", "alt": "projet atomic Girl" },
+    { "id": 214, "category": "manga", "url": "/photos/manga/dbz.webp", "alt": "projet DBZ" },
 
 
 
     { "id": 301, "category": "graphique", "url": "/photos/graphique/graphique-robot2.webp", "alt": "robot tatoué sur un mollet photo en couleur" },
     { "id": 302, "category": "graphique", "url": "/photos/graphique/graphique-calaveras.webp", "alt": "tatouage calaveras style mexicain" },
-    { "id": 303, "category": "graphique", "url": "/photos/autre/autre-francis.webp", "alt": "bras tatoué avec le prénom Francis" },
+    { "id": 303, "category": "graphique", "url": "/photos/graphique/francis.webp", "alt": "bras tatoué avec le prénom Francis" },
     { "id": 304, "category": "graphique", "url": "/photos/graphique/graphique-triangle-canif.webp", "alt": "mollet tatoué Corse compas et canif" },
     { "id": 305, "category": "graphique", "url": "/photos/graphique/graphique-robot1.webp", "alt": "robot tatoué sur un mollet photo en noir et blanc" },
     { "id": 311, "category": "graphique", "url": "/photos/dessin_tablette/dessin-animaux.webp", "alt": "dessin d'un crabe" },
@@ -50,22 +62,26 @@
     { "id": 313, "category": "graphique", "url": "/photos/dessin_tablette/dessin-skateur.webp", "alt": "dessin skateur" },
     { "id": 315, "category": "graphique", "url": "/photos/dessin_tablette/dessin-robot.webp", "alt": "dessin d'un robot" },
     { "id": 316, "category": "graphique", "url": "/photos/graphique/graphique-insecte.webp", "alt": "dessin d'un insecte" },
+
+
     { "id": 401, "category": "trash", "url": "/photos/trash/trash-erotica.webp", "alt": "dessin erotica en panavision" },
     { "id": 402, "category": "trash", "url": "/photos/trash/trash-taxidriver.webp", "alt": "dessin taxi driver" },
-    { "id": 501, "category": "floral", "url": "/photos/dessin_tablette/dessin-dragon.webp", "alt": "dessin d'un dragon entouré de fleurs" },
+
+
     { "id": 502, "category": "floral", "url": "/photos/floral/floral-bras.webp", "alt": "fleur tatouée sur un avant bras" },
     { "id": 503, "category": "floral", "url": "/photos/floral/floral-dos1.webp", "alt": "fleur tatouée sur le dos d'une femme" },
     { "id": 504, "category": "floral", "url": "/photos/floral/floral-epaule1.webp", "alt": "fleur tatouée sur l'épaule d'une femme" },
     { "id": 505, "category": "floral", "url": "/photos/floral/floral-epaule2.webp", "alt": "rose tatouée sur l'épaule d'une femme" },
+    { "id": 506, "category": "floral", "url": "/photos/floral/mains-fineline.webp", "alt": "projet mains fine line" },
+    { "id": 507, "category": "floral", "url": "/photos/floral/dessin-dragon.webp", "alt": "dessin d'un dragon entouré de fleurs" },
+    
 
+    
     { "id": 601, "category": "atelier", "url": "/photos/atelier/atelier-cafe.webp", "alt": "tasse de café" },
     { "id": 602, "category": "atelier", "url": "/photos/atelier/atelier-terrasse.webp", "alt": "terrasse de l'atlier" },
     { "id": 603, "category": "atelier", "url": "/photos/atelier/atelier-siege.webp", "alt": "siege de tatouage" },
     { "id": 604, "category": "atelier", "url": "/photos/atelier/atelier-darts.webp", "alt": "cible de flechettes" },
     { "id": 605, "category": "atelier", "url": "/photos/atelier/atelier-place-abattoir.webp", "alt": "place de l'abattoir et mannequin" },
     { "id": 606, "category": "atelier", "url": "/photos/atelier/atelier-finnegans.webp", "alt": "soirée tatoo au finnegans" }
-
-
-
 
 ]

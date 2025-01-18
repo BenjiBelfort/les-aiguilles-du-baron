@@ -74,14 +74,17 @@ const Gallery = () => {
 
                 <div className="gallery-container">
                     {filteredPhotos.slice(0, visiblePhotosCount).map((photo) => (
+                        <div key={photo.id} className="photo-wrapper">
                         <img
-                            key={photo.id}
                             src={photo.url}
                             alt={photo.alt}
                             className="photo-thumbnail"
                             loading="lazy"
                         />
-                    ))}
+                        {/* Affichage du sticker si réservé */}
+                        {photo.reserved && <span className="reserved-sticker">Réservé</span>}
+                    </div>
+                ))}
                 </div>
 
                 {/* Bouton "Afficher la suite" uniquement dans la vue initiale (TOUS) */}
