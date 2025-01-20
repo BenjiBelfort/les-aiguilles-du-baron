@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import CategoryDescription from './categoryDescription';
+import reservedBadge from '../../assets/reza-vert.png';
+import inProgressBadge from '../../assets/en-cours.png';
+
 import photosData from '../../data/photos.json';
 
 import './gallery.css';
@@ -75,16 +78,23 @@ const Gallery = () => {
                 <div className="gallery-container">
                     {filteredPhotos.slice(0, visiblePhotosCount).map((photo) => (
                         <div key={photo.id} className="photo-wrapper">
-                        <img
-                            src={photo.url}
-                            alt={photo.alt}
-                            className="photo-thumbnail"
-                            loading="lazy"
-                        />
-                        {/* Affichage du sticker si réservé */}
-                        {photo.reserved && <span className="reserved-sticker">Réservé</span>}
-                    </div>
-                ))}
+                            {/* Affiche le badge si un statut est défini */}
+                            {photo.status && (
+                                <img
+                                    src={photo.status === "reserved" ? reservedBadge : inProgressBadge}
+                                    alt={photo.status === "reserved" ? "Réservé" : "En cours"}
+                                    className="badge"
+                                />
+                            )}
+                            {/* Image principale */}
+                            <img
+                                src={photo.url}
+                                alt={photo.alt}
+                                className="photo-thumbnail"
+                                loading="lazy"
+                            />
+                        </div>
+                    ))}
                 </div>
 
                 {/* Bouton "Afficher la suite" uniquement dans la vue initiale (TOUS) */}

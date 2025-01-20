@@ -1,5 +1,5 @@
 [
-    { "id": 101, "category": "realisme", "url": "/photos/realisme/pirate.webp", "alt": "bateau pirate tatoué sur le mollet" },
+    { "id": 101, "category": "realisme", "url": "/photos/realisme/pirate.webp", "alt": "bateau pirate tatoué sur le mollet", "status": "in_progress" },
     { "id": 102, "category": "realisme", "url": "/photos/realisme/realisme-ange.webp", "alt": "tatouage d'un ange sur l'avant bras" },
     { "id": 103, "category": "realisme", "url": "/photos/realisme/realisme-Michel-Ange.webp", "alt": "tatouage des mains de Michel-Anges" },
     { "id": 104, "category": "realisme", "url": "/photos/realisme/realisme-bonzai.webp", "alt": "tatouage d'un bonzai sur le bras" },
@@ -8,8 +8,8 @@
     { "id": 107, "category": "realisme", "url": "/photos/realisme/realisme-bobine-film.webp", "alt": "tatouage d'une bobine de film sur l'épaule" },
     { "id": 108, "category": "realisme", "url": "/photos/realisme/realisme-elephant.webp", "alt": "tatouage elephant sur l'omoplate" },
     { "id": 109, "category": "realisme", "url": "/photos/realisme/realisme-gorille.webp", "alt": "tatouage d'un gorille sur l'épaule" },
-    { "id": 110, "category": "realisme", "url": "/photos/realisme/realisme-spartiate.webp", "alt": "tatouage d'un spartiate et de Poséidon" },
-    { "id": 111, "category": "realisme", "url": "/photos/realisme/poseidon.webp", "alt": "tatouage Poseidon sur le pec" },
+    { "id": 110, "category": "realisme", "url": "/photos/realisme/realisme-spartiate.webp", "alt": "tatouage d'un spartiate et de Poséidon", "status": "in_progress" },
+    { "id": 111, "category": "realisme", "url": "/photos/realisme/poseidon.webp", "alt": "tatouage Poseidon sur le pec", "status": "in_progress" },
     { "id": 112, "category": "realisme", "url": "/photos/realisme/realisme-spartiates.webp", "alt": "tatouage Spartiates sur le bras" },
     { "id": 113, "category": "realisme", "url": "/photos/realisme/chat-aile.webp", "alt": "chat ailé tatoué sur la poitrine" },
     { "id": 114, "category": "realisme", "url": "/photos/realisme/realisme-labyrinthe.webp", "alt": "tatouage d'un labyrinthe sur la cuisse" },
@@ -23,7 +23,7 @@
     { "id": 122, "category": "realisme", "url": "/photos/realisme/dessin-Pierre_Croix.webp", "alt": "dessin d'un homme crucifié" },
     { "id": 123, "category": "realisme", "url": "/photos/realisme/viking.webp", "alt": "Viking" },
     { "id": 124, "category": "realisme", "url": "/photos/realisme/arcane.webp", "alt": "personnages Arcane" },
-    { "id": 125, "category": "realisme", "url": "/photos/realisme/deadpool2.webp", "alt": "Deadpool et Wolverine 2", "reserved": true },
+    { "id": 125, "category": "realisme", "url": "/photos/realisme/deadpool2.webp", "alt": "Deadpool et Wolverine 2", "status": "reserved" },
     { "id": 126, "category": "realisme", "url": "/photos/realisme/deadpool.webp", "alt": "Deadpool et Wolverine 1" },
     { "id": 127, "category": "realisme", "url": "/photos/realisme/gambling.webp", "alt": "personnage Gambling" },
 
@@ -48,14 +48,14 @@
     { "id": 211, "category": "manga", "url": "/photos/manga/manga-visage1.webp", "alt": "tatouage style manga visage de femme dans un champ" },
     { "id": 212, "category": "manga", "url": "/photos/manga/manga-visage2.webp", "alt": "tatouage style manga visage de femme" },
     { "id": 213, "category": "manga", "url": "/photos/manga/atomic-girl.webp", "alt": "projet atomic Girl" },
-    { "id": 214, "category": "manga", "url": "/photos/manga/dbz.webp", "alt": "projet DBZ" },
+    { "id": 214, "category": "manga", "url": "/photos/manga/dbz.webp", "alt": "projet DBZ", "status": "reserved" },
 
 
 
     { "id": 301, "category": "graphique", "url": "/photos/graphique/graphique-robot2.webp", "alt": "robot tatoué sur un mollet photo en couleur" },
     { "id": 302, "category": "graphique", "url": "/photos/graphique/graphique-calaveras.webp", "alt": "tatouage calaveras style mexicain" },
     { "id": 303, "category": "graphique", "url": "/photos/graphique/francis.webp", "alt": "bras tatoué avec le prénom Francis" },
-    { "id": 304, "category": "graphique", "url": "/photos/graphique/graphique-triangle-canif.webp", "alt": "mollet tatoué Corse compas et canif" },
+    { "id": 304, "category": "graphique", "url": "/photos/graphique/graphique-triangle-canif.webp", "alt": "mollet tatoué Corse compas et canif", "status": "in_progress" },
     { "id": 305, "category": "graphique", "url": "/photos/graphique/graphique-robot1.webp", "alt": "robot tatoué sur un mollet photo en noir et blanc" },
     { "id": 311, "category": "graphique", "url": "/photos/dessin_tablette/dessin-animaux.webp", "alt": "dessin d'un crabe" },
     { "id": 312, "category": "graphique", "url": "/photos/dessin_tablette/dessin-visage.webp", "alt": "dessin d'un homme qui fume" },
