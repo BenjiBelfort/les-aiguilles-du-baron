@@ -51,9 +51,9 @@ const App = () => {
               <Mainimg />
               <Mainlogo />
               <Intro />
-              {/* <Testimonials /> */}
               <Gallery />
               <Atelier />
+              {/* <Testimonials /> */}
               <Contact />
               <Footer />
               <CookieBanner />

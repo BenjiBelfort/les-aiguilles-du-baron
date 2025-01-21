@@ -10,7 +10,7 @@
     { "id": 109, "category": "realisme", "url": "/photos/realisme/realisme-gorille.webp", "alt": "tatouage d'un gorille sur l'épaule" },
     { "id": 110, "category": "realisme", "url": "/photos/realisme/realisme-spartiate.webp", "alt": "tatouage d'un spartiate et de Poséidon", "status": "in_progress" },
     { "id": 111, "category": "realisme", "url": "/photos/realisme/poseidon.webp", "alt": "tatouage Poseidon sur le pec", "status": "in_progress" },
-    { "id": 112, "category": "realisme", "url": "/photos/realisme/realisme-spartiates.webp", "alt": "tatouage Spartiates sur le bras" },
+    { "id": 112, "category": "realisme", "url": "/photos/realisme/realisme-spartiates.webp", "alt": "tatouage Spartiates sur le bras", "status": "in_progress" },
     { "id": 113, "category": "realisme", "url": "/photos/realisme/chat-aile.webp", "alt": "chat ailé tatoué sur la poitrine" },
     { "id": 114, "category": "realisme", "url": "/photos/realisme/realisme-labyrinthe.webp", "alt": "tatouage d'un labyrinthe sur la cuisse" },
     { "id": 115, "category": "realisme", "url": "/photos/realisme/realisme-Samuel-L-Jackson.webp", "alt": "tatouage réalisme de Samuel L. Jackson" },
@@ -21,11 +21,11 @@
     { "id": 120, "category": "realisme", "url": "/photos/realisme/realisme-Johnny-Hallyday.webp", "alt": "tatouage Johnny Hallyday sur un mollet" },
     { "id": 121, "category": "realisme", "url": "/photos/realisme/realisme-croix1.webp", "alt": "tatouage d'une croix sur le dos" },
     { "id": 122, "category": "realisme", "url": "/photos/realisme/dessin-Pierre_Croix.webp", "alt": "dessin d'un homme crucifié" },
-    { "id": 123, "category": "realisme", "url": "/photos/realisme/viking.webp", "alt": "Viking" },
-    { "id": 124, "category": "realisme", "url": "/photos/realisme/arcane.webp", "alt": "personnages Arcane" },
+    { "id": 123, "category": "realisme", "url": "/photos/realisme/viking.webp", "alt": "Viking", "status": "available" },
+    { "id": 124, "category": "realisme", "url": "/photos/realisme/arcane.webp", "alt": "personnages Arcane", "status": "available" },
     { "id": 125, "category": "realisme", "url": "/photos/realisme/deadpool2.webp", "alt": "Deadpool et Wolverine 2", "status": "reserved" },
-    { "id": 126, "category": "realisme", "url": "/photos/realisme/deadpool.webp", "alt": "Deadpool et Wolverine 1" },
-    { "id": 127, "category": "realisme", "url": "/photos/realisme/gambling.webp", "alt": "personnage Gambling" },
+    { "id": 126, "category": "realisme", "url": "/photos/realisme/deadpool.webp", "alt": "Deadpool et Wolverine 1", "status": "available" },
+    { "id": 127, "category": "realisme", "url": "/photos/realisme/gambling.webp", "alt": "personnage Gambling", "status": "available" },
 
 
 
@@ -39,15 +39,15 @@
     { "id": 203, "category": "manga", "url": "/photos/manga/manga-dragon-pokemon.webp", "alt": "tatouage dragon pokemon dos" },
     { "id": 204, "category": "manga", "url": "/photos/manga/manga-japonais-couleur.webp", "alt": "tatouage style japonais yakusa carpe koï couleur" },
 
-    { "id": 205, "category": "manga", "url": "/photos/manga/manga-japonais.webp", "alt": "dessin de carpes dans un style japonais" },
+    { "id": 205, "category": "manga", "url": "/photos/manga/manga-japonais.webp", "alt": "dessin de carpes dans un style japonais", "status": "reserved"  },
     { "id": 206, "category": "manga", "url": "/photos/manga/manga-great-wave.webp", "alt": "Great Wave d'Hokusai tatouée sur un mollet" },
 
-    { "id": 207, "category": "manga", "url": "/photos/manga/manga-dragon-ball.webp", "alt": "dessin dragon ball" },
+    { "id": 207, "category": "manga", "url": "/photos/manga/manga-dragon-ball.webp", "alt": "dessin dragon ball", "status": "available" },
     { "id": 209, "category": "manga", "url": "/photos/manga/manga-Akira.webp", "alt": "dessin d'un homme style manga" },
     { "id": 210, "category": "manga", "url": "/photos/manga/manga-Albator.webp", "alt": "tatouage Albator" },
-    { "id": 211, "category": "manga", "url": "/photos/manga/manga-visage1.webp", "alt": "tatouage style manga visage de femme dans un champ" },
-    { "id": 212, "category": "manga", "url": "/photos/manga/manga-visage2.webp", "alt": "tatouage style manga visage de femme" },
-    { "id": 213, "category": "manga", "url": "/photos/manga/atomic-girl.webp", "alt": "projet atomic Girl" },
+    { "id": 211, "category": "manga", "url": "/photos/manga/manga-visage1.webp", "alt": "tatouage style manga visage de femme dans un champ", "status": "available" },
+    { "id": 212, "category": "manga", "url": "/photos/manga/manga-visage2.webp", "alt": "tatouage style manga visage de femme", "status": "available" },
+    { "id": 213, "category": "manga", "url": "/photos/manga/atomic-girl.webp", "alt": "projet atomic Girl", "status": "available" },
     { "id": 214, "category": "manga", "url": "/photos/manga/dbz.webp", "alt": "projet DBZ", "status": "reserved" },
 
 
@@ -57,23 +57,23 @@
     { "id": 303, "category": "graphique", "url": "/photos/graphique/francis.webp", "alt": "bras tatoué avec le prénom Francis" },
     { "id": 304, "category": "graphique", "url": "/photos/graphique/graphique-triangle-canif.webp", "alt": "mollet tatoué Corse compas et canif", "status": "in_progress" },
     { "id": 305, "category": "graphique", "url": "/photos/graphique/graphique-robot1.webp", "alt": "robot tatoué sur un mollet photo en noir et blanc" },
-    { "id": 311, "category": "graphique", "url": "/photos/dessin_tablette/dessin-animaux.webp", "alt": "dessin d'un crabe" },
-    { "id": 312, "category": "graphique", "url": "/photos/dessin_tablette/dessin-visage.webp", "alt": "dessin d'un homme qui fume" },
-    { "id": 313, "category": "graphique", "url": "/photos/dessin_tablette/dessin-skateur.webp", "alt": "dessin skateur" },
+    { "id": 311, "category": "graphique", "url": "/photos/dessin_tablette/dessin-animaux.webp", "alt": "dessin d'un crabe", "status": "available" },
+    { "id": 312, "category": "graphique", "url": "/photos/dessin_tablette/dessin-visage.webp", "alt": "dessin d'un homme qui fume", "status": "available" },
+    { "id": 313, "category": "graphique", "url": "/photos/dessin_tablette/dessin-skateur.webp", "alt": "dessin skateur", "status": "available" },
     { "id": 315, "category": "graphique", "url": "/photos/dessin_tablette/dessin-robot.webp", "alt": "dessin d'un robot" },
-    { "id": 316, "category": "graphique", "url": "/photos/graphique/graphique-insecte.webp", "alt": "dessin d'un insecte" },
+    { "id": 316, "category": "graphique", "url": "/photos/graphique/graphique-insecte.webp", "alt": "dessin d'un insecte", "status": "available" },
 
 
-    { "id": 401, "category": "trash", "url": "/photos/trash/trash-erotica.webp", "alt": "dessin erotica en panavision" },
-    { "id": 402, "category": "trash", "url": "/photos/trash/trash-taxidriver.webp", "alt": "dessin taxi driver" },
+    { "id": 401, "category": "trash", "url": "/photos/trash/trash-erotica.webp", "alt": "dessin erotica en panavision", "status": "available" },
+    { "id": 402, "category": "trash", "url": "/photos/trash/trash-taxidriver.webp", "alt": "dessin taxi driver", "status": "available" },
 
 
     { "id": 502, "category": "floral", "url": "/photos/floral/floral-bras.webp", "alt": "fleur tatouée sur un avant bras" },
     { "id": 503, "category": "floral", "url": "/photos/floral/floral-dos1.webp", "alt": "fleur tatouée sur le dos d'une femme" },
     { "id": 504, "category": "floral", "url": "/photos/floral/floral-epaule1.webp", "alt": "fleur tatouée sur l'épaule d'une femme" },
     { "id": 505, "category": "floral", "url": "/photos/floral/floral-epaule2.webp", "alt": "rose tatouée sur l'épaule d'une femme" },
-    { "id": 506, "category": "floral", "url": "/photos/floral/mains-fineline.webp", "alt": "projet mains fine line" },
-    { "id": 507, "category": "floral", "url": "/photos/floral/dessin-dragon.webp", "alt": "dessin d'un dragon entouré de fleurs" },
+    { "id": 506, "category": "floral", "url": "/photos/floral/mains-fineline.webp", "alt": "projet mains fine line", "status": "reserved" },
+    { "id": 507, "category": "floral", "url": "/photos/floral/dessin-dragon.webp", "alt": "dessin d'un dragon entouré de fleurs", "status": "reserved"  },
     
 
     

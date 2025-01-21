@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
   <loc>https://www.lesaiguillesdubaron.fr/</loc>
-  <lastmod>2024-09-12T19:28:32+00:00</lastmod>
+  <lastmod>2025-01-21T08:03:32+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.lesaiguillesdubaron.fr/public/atelier-de-tatouage-les-aiguilles-du-baron.webp</image:loc>
+      <image:caption>Les Aiguilles du Baron - Tatoueur à Belfort</image:caption>
+      <image:title>Les Aiguilles du Baron</image:title>
+      <image:geo_location>Belfort, France</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lesaiguillesdubaron.fr/photos/floral/floral-dos1.webp</image:loc>
+      <image:caption>Tatouage floral dans le dos</image:caption>
+      <image:title>Floral et fine line</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.lesaiguillesdubaron.fr/photos/atelier/atelier-terrasse.webp</image:loc>
+      <image:caption>Sur la terrasse de l'atelier de tattoo</image:caption>
+      <image:title>Atelier de tatouage</image:title>
+      <image:geo_location>Belfort, France</image:geo_location>
+    </image:image>
 </url>
 
 

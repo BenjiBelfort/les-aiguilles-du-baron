@@ -3,7 +3,10 @@ import './footer.css';
 const Footer = () => {
   return (
     <footer className='footer'>
-        Copyright &#169; 2025 - Les Aiguilles du Baron. Tous droits réservés.<a href="https://benji-belfort-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Dev by Benji Belfort</a>
+        <p>Copyright &#169; 2025 - Les Aiguilles du Baron.</p>
+        <p>Tous droits réservés.</p>
+        <a className='footerlink' href="https://ta0.myportfolio.com/" target="_blank" rel="noopener noreferrer">Pic by Théo Merle.</a>
+        <a className='footerlink' href="https://benji-belfort-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Dev by Benji Belfort.</a>
     </footer>
   );
 }

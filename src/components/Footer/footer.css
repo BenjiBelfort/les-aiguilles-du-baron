@@ -2,16 +2,21 @@ footer {
     background: black;
     color: white;
     width: 100vw;
-    height: 4rem;
+    min-height: 6rem;
+    padding: 50px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: small;
+
     gap: 0.5rem; /* Espace entre le texte et le lien */
     flex-wrap: nowrap; /* Empêche le passage à une nouvelle ligne */
 }
 
-footer a {
+footer p {
+    font-size: 16px;
+}
+
+.footerlink {
     color: white;
     text-decoration: none;
 }
@@ -22,7 +27,6 @@ footer a:hover {
 
 @media (max-width: 600px) {
     footer {
-        flex-direction: column; /* Les blocs s'empilent verticalement */
-        gap: 0.25rem; /* Réduit l'espacement entre les blocs */
+        flex-direction: column;
     }
 }

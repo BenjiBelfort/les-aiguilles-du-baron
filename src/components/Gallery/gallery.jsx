@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import CategoryDescription from './categoryDescription';
-import reservedBadge from '../../assets/reza-vert.png';
+import reservedBadge from '../../assets/reza.png';
 import inProgressBadge from '../../assets/en-cours.png';
+import availableBadge from '../../assets/dispo.png';
 
 import photosData from '../../data/photos.json';
 
@@ -15,6 +16,21 @@ const categories = [
     { key: 'floral', label: 'Floral / Fine line' },
     { key: 'atelier', label: "Vie de l'Atelier" }
 ];
+
+const badgeMap = {
+    reserved: {
+        src: reservedBadge,
+        alt: "Réservé"
+    },
+    in_progress: {
+        src: inProgressBadge,
+        alt: "En cours"
+    },
+    available: {
+        src: availableBadge,
+        alt: "Disponible"
+    }
+};
 
 const shufflePhotos = (photosArray) => {
     return photosArray
@@ -79,10 +95,10 @@ const Gallery = () => {
                     {filteredPhotos.slice(0, visiblePhotosCount).map((photo) => (
                         <div key={photo.id} className="photo-wrapper">
                             {/* Affiche le badge si un statut est défini */}
-                            {photo.status && (
+                            {photo.status && badgeMap[photo.status] && (
                                 <img
-                                    src={photo.status === "reserved" ? reservedBadge : inProgressBadge}
-                                    alt={photo.status === "reserved" ? "Réservé" : "En cours"}
+                                    src={badgeMap[photo.status].src}
+                                    alt={badgeMap[photo.status].alt}
                                     className="badge"
                                 />
                             )}
