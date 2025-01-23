@@ -23,18 +23,35 @@
     min-height: 50px;
     margin: 0 5px;
     padding: 5px 10px;
-    border: none;
     background: rgba(0, 0, 0, 0.8);
+
+
+    box-shadow: rgba(0, 0, 0, .5) 15px 28px 25px -18px;
+
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+
+    border: 0.5px solid #fff;
+
+    transition: all 235ms ease-in-out;
+
     color: #fff;
     cursor: pointer;
     font-size: 18px;
-    border-radius: 1rem;
 }
-  
+
+.filter-button:hover {
+    box-shadow: rgba(0, 0, 0, .8) 2px 8px 8px -5px;
+}
+
 .filter-button.active {
     background-color: #d4bf79;
     color: black;
     font-weight: bold;
+    border: 0.5px solid #000;
 }
 
 .category-description-container, .gallery-container {
@@ -136,7 +153,6 @@
     .filter-button {
         width: 100%;
         font-size: medium;
-        border-radius: 0.5rem;
     }
 
     .badge {

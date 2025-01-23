@@ -15,3 +15,8 @@ Utiliser "npm run deploy" pour appliquer les MAJ sur le site test sur GitHub (ma
 
 
 "npm run build" avant mise en production en ligne
+
+
+"git add ."
+"git commit -m "message commit""
+"git push -u origin main"

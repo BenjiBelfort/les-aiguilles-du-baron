@@ -63,9 +63,9 @@
     { "id": 315, "category": "graphique", "url": "/photos/dessin_tablette/dessin-robot.webp", "alt": "dessin d'un robot" },
     { "id": 316, "category": "graphique", "url": "/photos/graphique/graphique-insecte.webp", "alt": "dessin d'un insecte", "status": "available" },
 
-
-    { "id": 401, "category": "trash", "url": "/photos/trash/trash-erotica.webp", "alt": "dessin erotica en panavision", "status": "available" },
-    { "id": 402, "category": "trash", "url": "/photos/trash/trash-taxidriver.webp", "alt": "dessin taxi driver", "status": "available" },
+    { "id": 401, "category": "trash", "url": "/photos/trash/I_am_Groot.webp", "alt": "Je s'appelle Groot tatoué sur le bras" },
+    { "id": 402, "category": "trash", "url": "/photos/trash/trash-erotica.webp", "alt": "dessin erotica en panavision", "status": "available" },
+    { "id": 403, "category": "trash", "url": "/photos/trash/trash-taxidriver.webp", "alt": "dessin taxi driver", "status": "available" },
 
 
     { "id": 502, "category": "floral", "url": "/photos/floral/floral-bras.webp", "alt": "fleur tatouée sur un avant bras" },
