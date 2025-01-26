@@ -17,12 +17,13 @@ const Testimonials = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextTestimonial, 5000);
+    const interval = setInterval(nextTestimonial, 3000);
     return () => clearInterval(interval); // Nettoyage à la fin
   }, []);
 
   return (
     <section id="Testimonials">
+      <h3>Témoignages</h3>
       <div className="carousel">
         <div
           className={`testimonial ${

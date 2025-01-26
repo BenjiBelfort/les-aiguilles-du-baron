@@ -19,7 +19,7 @@
 }
   
 .filter-button {
-    width: 80%;
+    width: 85%;
     min-height: 50px;
     margin: 0 5px;
     padding: 5px 10px;
@@ -36,7 +36,7 @@
 
     border: 0.5px solid #fff;
 
-    transition: all 235ms ease-in-out;
+    transition: all 300ms ease-in-out;
 
     color: #fff;
     cursor: pointer;
@@ -44,7 +44,7 @@
 }
 
 .filter-button:hover {
-    box-shadow: rgba(0, 0, 0, .8) 2px 8px 8px -5px;
+    box-shadow: rgba(255, 255, 255, .5) 0 0 4px 3px;
 }
 
 .filter-button.active {
@@ -52,6 +52,14 @@
     color: black;
     font-weight: bold;
     border: 0.5px solid #000;
+    text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.filter-button.active:hover {
+    box-shadow: rgba(0, 0, 0, .5) 15px 28px 25px -18px;
 }
 
 .category-description-container, .gallery-container {
@@ -151,7 +159,7 @@
     }
 
     .filter-button {
-        width: 100%;
+        width: 99%;
         font-size: medium;
     }
 

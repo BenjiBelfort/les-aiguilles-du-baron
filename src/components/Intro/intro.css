@@ -29,10 +29,14 @@
     text-align: center;
 }
 
-.introText h2 {
-    font-size: large;
-    display: inline-block;
+.gold-title {
+    text-transform: uppercase;
+    font-family: "Shippori Mincho", serif;
+    color: #d4bf79;
+    font-weight: bold;
 }
+
+
 
 .logo-intro {
     display: none;
@@ -71,10 +75,6 @@
 
 @media screen and (max-width:375px) {
     .introText {
-        font-size: large;
-    }
-
-    .introText h2 {
         font-size: large;
     }
 

@@ -2,6 +2,8 @@ import { useRef, useState, useEffect, useCallback } from 'react';
 import './contact.css';
 import facebook from '../../assets/facebook-icon.png';
 import instagram from '../../assets/instagram-icon.png';
+import tiktok from '../../assets/tiktok-icon.png';
+import newIcon from '../../assets/new-icon.png';
 import map from '../../assets/map.png';
 import cabine from '../../assets/cabine-de-tatouage.webp';
 import puzzleImage from '../../assets/puzzle.webp';
@@ -149,6 +151,10 @@ const Contact = () => {
         <div className='links'>
           <a href='https://www.facebook.com/profile.php?id=61555545550171' target='_blank' rel="noopener noreferrer">
             <img src={facebook} alt='Facebook' className='link' /></a>
+          <a href='https://www.tiktok.com/@lesaiguillesdubaron' target='_blank' rel='noopener noreferrer' className='tiktok-container'>
+            <img src={tiktok} alt='TikTok' className='link' />
+            <img src={newIcon} alt='New Icon' className='new-icon' />
+          </a>
           <a href='https://www.instagram.com/lesaiguillesdubaron/' target='_blank' rel='noopener noreferrer'>
             <img src={instagram} alt='Instagram' className='link' /></a>
         </div>
