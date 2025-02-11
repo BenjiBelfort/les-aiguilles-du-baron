@@ -1,4 +1,5 @@
 [
+    { "id": 100, "category": "realisme", "url": "/photos/realisme/panthere.webp", "alt": "panthère tatouée sur le bras" },
     { "id": 101, "category": "realisme", "url": "/photos/realisme/pirate.webp", "alt": "bateau pirate tatoué sur le mollet", "status": "in_progress" },
     { "id": 102, "category": "realisme", "url": "/photos/realisme/tete-de-mort-pirate.webp", "alt": "bateau pirate tatoué sur le mollet", "status": "in_progress" },
     { "id": 103, "category": "realisme", "url": "/photos/realisme/realisme-phare.webp", "alt": "bateau pirate tatoué sur le mollet", "status": "in_progress" },
@@ -11,7 +12,7 @@
     { "id": 110, "category": "realisme", "url": "/photos/realisme/realisme-elephant.webp", "alt": "tatouage elephant sur l'omoplate" },
     { "id": 111, "category": "realisme", "url": "/photos/realisme/realisme-gorille.webp", "alt": "tatouage d'un gorille sur l'épaule" },
     { "id": 112, "category": "realisme", "url": "/photos/realisme/realisme-spartiate.webp", "alt": "tatouage d'un spartiate et de Poséidon", "status": "in_progress" },
-    { "id": 113, "category": "realisme", "url": "/photos/realisme/poseidon.webp", "alt": "tatouage Poseidon sur le pec", "status": "in_progress" },
+    { "id": 113, "category": "realisme", "url": "/photos/realisme/poseidon2.webp", "alt": "tatouage Poseidon sur le pec", "status": "in_progress" },
     { "id": 114, "category": "realisme", "url": "/photos/realisme/realisme-spartiates.webp", "alt": "tatouage Spartiates sur le bras", "status": "in_progress" },
     { "id": 115, "category": "realisme", "url": "/photos/realisme/chat-aile.webp", "alt": "chat ailé tatoué sur la poitrine" },
     { "id": 116, "category": "realisme", "url": "/photos/realisme/realisme-labyrinthe.webp", "alt": "tatouage d'un labyrinthe sur la cuisse" },
@@ -29,21 +30,12 @@
     { "id": 128, "category": "realisme", "url": "/photos/realisme/deadpool.webp", "alt": "Deadpool et Wolverine 1", "status": "available" },
     { "id": 129, "category": "realisme", "url": "/photos/realisme/gambling.webp", "alt": "personnage Gambling", "status": "available" },
 
-
-
-
-
-
-
-
     { "id": 201, "category": "manga", "url": "/photos/manga/manga-guts.webp", "alt": "tatouage style manga visage de femme" },
     { "id": 202, "category": "manga", "url": "/photos/manga/manga-yakusa.webp", "alt": "tatouage style yakusa sur l'épaule" },
     { "id": 203, "category": "manga", "url": "/photos/manga/manga-dragon-pokemon.webp", "alt": "tatouage dragon pokemon dos" },
     { "id": 204, "category": "manga", "url": "/photos/manga/manga-japonais-couleur.webp", "alt": "tatouage style japonais yakusa carpe koï couleur" },
-
     { "id": 205, "category": "manga", "url": "/photos/manga/manga-japonais.webp", "alt": "dessin de carpes dans un style japonais", "status": "reserved"  },
     { "id": 206, "category": "manga", "url": "/photos/manga/manga-great-wave.webp", "alt": "Great Wave d'Hokusai tatouée sur un mollet" },
-
     { "id": 207, "category": "manga", "url": "/photos/manga/manga-dragon-ball.webp", "alt": "dessin dragon ball", "status": "available" },
     { "id": 209, "category": "manga", "url": "/photos/manga/manga-Akira.webp", "alt": "dessin d'un homme style manga" },
     { "id": 210, "category": "manga", "url": "/photos/manga/manga-Albator.webp", "alt": "tatouage Albator" },
@@ -52,13 +44,13 @@
     { "id": 213, "category": "manga", "url": "/photos/manga/atomic-girl.webp", "alt": "projet atomic Girl", "status": "available" },
     { "id": 214, "category": "manga", "url": "/photos/manga/dbz.webp", "alt": "projet DBZ", "status": "reserved" },
 
-
-
     { "id": 301, "category": "graphique", "url": "/photos/graphique/graphique-robot2.webp", "alt": "robot tatoué sur un mollet photo en couleur" },
     { "id": 302, "category": "graphique", "url": "/photos/graphique/graphique-calaveras.webp", "alt": "tatouage calaveras style mexicain" },
     { "id": 303, "category": "graphique", "url": "/photos/graphique/francis.webp", "alt": "bras tatoué avec le prénom Francis" },
     { "id": 304, "category": "graphique", "url": "/photos/graphique/graphique-triangle-canif.webp", "alt": "mollet tatoué Corse compas et canif", "status": "in_progress" },
     { "id": 305, "category": "graphique", "url": "/photos/graphique/graphique-robot1.webp", "alt": "robot tatoué sur un mollet photo en noir et blanc" },
+    { "id": 306, "category": "graphique", "url": "/photos/graphique/poulpe.webp", "alt": "poulpe tatoué sur la cheville" },
+    { "id": 307, "category": "graphique", "url": "/photos/graphique/pattern.webp", "alt": "pattern tatoué sur le mollet au dessus de la cheville" },
     { "id": 311, "category": "graphique", "url": "/photos/dessin_tablette/dessin-animaux.webp", "alt": "dessin d'un crabe", "status": "available" },
     { "id": 312, "category": "graphique", "url": "/photos/dessin_tablette/dessin-visage.webp", "alt": "dessin d'un homme qui fume", "status": "available" },
     { "id": 313, "category": "graphique", "url": "/photos/dessin_tablette/dessin-skateur.webp", "alt": "dessin skateur", "status": "available" },
@@ -69,15 +61,12 @@
     { "id": 402, "category": "trash", "url": "/photos/trash/trash-erotica.webp", "alt": "dessin erotica en panavision", "status": "available" },
     { "id": 403, "category": "trash", "url": "/photos/trash/trash-taxidriver.webp", "alt": "dessin taxi driver", "status": "available" },
 
-
     { "id": 502, "category": "floral", "url": "/photos/floral/floral-bras.webp", "alt": "fleur tatouée sur un avant bras" },
     { "id": 503, "category": "floral", "url": "/photos/floral/floral-dos1.webp", "alt": "fleur tatouée sur le dos d'une femme" },
     { "id": 504, "category": "floral", "url": "/photos/floral/floral-epaule1.webp", "alt": "fleur tatouée sur l'épaule d'une femme" },
     { "id": 505, "category": "floral", "url": "/photos/floral/floral-epaule2.webp", "alt": "rose tatouée sur l'épaule d'une femme" },
-    { "id": 506, "category": "floral", "url": "/photos/floral/mains-fineline.webp", "alt": "projet mains fine line", "status": "reserved" },
+    { "id": 506, "category": "floral", "url": "/photos/floral/mains-fine-line.webp", "alt": "Mains fine line" },
     { "id": 507, "category": "floral", "url": "/photos/floral/dessin-dragon.webp", "alt": "dessin d'un dragon entouré de fleurs", "status": "reserved"  },
-    
-
     
     { "id": 601, "category": "atelier", "url": "/photos/atelier/atelier-cafe.webp", "alt": "tasse de café" },
     { "id": 602, "category": "atelier", "url": "/photos/atelier/atelier-terrasse.webp", "alt": "terrasse de l'atlier" },

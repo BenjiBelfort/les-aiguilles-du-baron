@@ -121,7 +121,7 @@ a {
     font-size: x-large;
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:1000px) {
     h2 {
         font-size: medium;
     }
@@ -129,9 +129,13 @@ a {
     h1 {
         font-size: x-small;
     }
+
+    .desktopMenuListItem {
+        font-size: small;
+    }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:850px) {
     .mobMenu {
         display: flex;
     }

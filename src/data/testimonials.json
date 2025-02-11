@@ -1,47 +1,117 @@
 [
     {
-        "photo": "",
-        "text": "À chacun sa raison de se tatouer, la mienne est un aboutissement final, une guérison, belle aventure d'un instant de vie. J'ai poussé la porte des Aiguilles du Baron, rencontré un Professionnel hors pair, Grand Artiste, merci à la vie ✨️🎋arine ,Pia se joint à moi 🦋",
+        "id": 1,
+        "text": "À chacun sa raison de se tatouer, la mienne est un aboutissement final, une guérison, belle aventure d'un instant de vie. J'ai poussé la porte des Aiguilles du Baron, rencontré un Professionnel hors pair, Grand Artiste, merci à la vie ✨️🎋arine, Pia se joint à moi 🦋",
         "signature": "Karine"
     },
     {
-        "photo": "",
+        "id": 2,
         "text": "Jean-Philippe est un tatoueur incroyable ! Du projet à la réalisation ! je vous le recommande sans hésitation !!!",
         "signature": "Mathieu"
     },
     {
-        "photo": "",
+        "id": 3,
         "text": "Super coup de crayon, il travaille le dessin directement avec nous, très pro et très carré, Belfort a gagné un super tatoueur !",
         "signature": "Ephrussie"
     },
     {
-        "photo": "",
-        "text": "Très très pro je valide et je le conseille à mon entourage ! très beau dessin très à l’écoute de ce que l’on souhaite ! rendu magnifique je reviendrai !",
+        "id": 4,
+        "text": "Très très pro je valide et je le conseille à mon entourage ! très beau dessin très à l’écoute de ce que l’on souhaite ! rendu magnifique je reviendrai!",
         "signature": "Noa"
     },
     {
-        "photo": "",
-        "text": "Super salon, tatoueur très sympa très professionnel et très doué, je recommande grandement",
+        "id": 5,
+        "text": "Super salon, tatoueur très sympa, très professionnel et très doué, je recommande grandement",
         "signature": "Iuri"
     },
     {
-        "photo": "",
+        "id": 6,
         "text": "Jean-Philippe est très pro. Très contente de mon tatouage Dali. Je recommande à 100%",
         "signature": "Sophie"
     },
     {
-        "photo": "",
+        "id": 7,
         "text": "Très bon tatoueur, et très sympathique. Je recommande sans hésitation",
         "signature": "Sébastien"
     },
     {
-        "photo": "",
+        "id": 8,
         "text": "Très à l'écoute et de très bon conseil 😁",
         "signature": "Fanny"
     },
     {
-        "photo": "",
+        "id": 9,
         "text": "Excellent tatoueur en vieille ville de Belfort! J’adore l’ambiance du salon, avec son jeu de fléchettes, la musique et tous ses livres. La décoration du lieu met direct dans l’ambiance! Great tattoo shop",
         "signature": "Benjamin"
+    },
+    {
+        "id": 10,
+        "text": "JP est un très bon tatoueur qui a le sens du détail et de la perfection. Il aime prendre son temps, discuter et faire en sorte que notre projet nous ressemble à 100%. Dommage que je dois quitter la région autrement je lui aurais confier mon corps à coup sur ! Encore merci pour ton travail et merci pour les carambars 😂",
+        "signature": "Charlotte"
+    },
+    {
+        "id": 11,
+        "text": "Merci merci infiniment pour ta gentillesse, ton accueil, ton écoute et ton professionnalisme. Le tatouage est parfait Jean-Philippe. Un grand merci à toi pour la qualité de ton travail et ton professionnalisme. A très vite pour la suite ❤️",
+        "signature": "Florence"
+    },
+    {
+        "id": 12,
+        "text": "Super bons moments avec Jean-Philippe, très a l'écoute pour mon projet et très très content du résultat final, un joli atelier décoré avec goût ou l'on se sent en confiance très important pour moi. Merci l'artiste j'adore à la prochaine.",
+        "signature": "Roby"
+    },
+    {
+        "id": 13,
+        "text": "Superbe rencontre, très professionnel premier tatouage réalisé et mis en confiance sur toutes questions pour le suivis du tatouage... salon très convivial avec une bonne ambiance. Hâte de réaliser mon prochain projet.",
+        "signature": "Maximilien"
+    },
+    {
+        "id": 14,
+        "text": "Un immense merci à Jean-Philippe pour ce tatouage, encore plus beau que dans mes rêves ! Son talent est incroyable, son professionnalisme irréprochable et sa gentillesse tout simplement inégalée. Il sait mettre à l’aise et écouter chaque détail pour un résultat parfait. Je recommande les yeux fermés.",
+        "signature": "Turko"
+    },
+    {
+        "id": 15,
+        "text": "Déjà le 4e tatoo avec Jean-Phi !!! Toujours un super moment d'écoute de partage pour réaliser le meilleur projet. Et quand il passe à l'action !!! Super ambiance musicale, de la discussion encore un super moment !! Il est TOP SYMPA !! Je le recommande les yeux fermés. Hâte de programmer le prochain !!! J'en profite pour le remercier encore !!!",
+        "signature": "Isabelle"
+    },
+    {
+        "id": 16,
+        "text": "Jean-Philippe a su m’accompagner dans mon projet de tatoo, a su faire preuve de patience 😜. À tous niveaux, le résultat est largement à la hauteur de mes attentes ! Je le recommande vivement.",
+        "signature": "Cédric"
+    },
+    {
+        "id": 17,
+        "text": "Expérience très bonne, rien a redire, j'ai très bien été accompagné pour mon premier tatouage et pour la suite, je recommande fortement si vous voulez sauter le pas et vous faire tatouer, vous ne le regretterez pas et vous en aurez pour votre argent",
+        "signature": "Linkovitch"
+    },
+    {
+        "id": 18,
+        "text": "Très bon tatoueur et très professionnel. À l écoute de ses clients, pratique tous les styles de tatouage. Je recommande",
+        "signature": "Fabrice"
+    },
+    {
+        "id": 19,
+        "text": "Super! Rien à redire un travail d’exception très minutieux! Tres professionnel! Je recommande les yeux fermés!",
+        "signature": "Kyllian"
+    },
+    {
+        "id": 20,
+        "text": "Salon recommandé autant pour la qualité des tatouages que le cadre tendance et convivial",
+        "signature": "Benjamin 🎯"
+    },
+    {
+        "id": 21,
+        "text": "Bonne expérience très bon tattoo je recommande",
+        "signature": "Corentin"
+    },
+    {
+        "id": 22,
+        "text": "Tatoueur très à l’écoute qui prends le temps de conseiller et de rassurer. Toujours autant de plaisir à me faire tatouer là bas ! Et toujours aussi satisfaite :)",
+        "signature": "Alizee"
+    },
+    {
+        "id": 23,
+        "text": "Un travail de qualité, de l'écoute et des suggestions pertinentes, la question reste toujours... a quand le prochain !! Merci JP",
+        "signature": "Pierre"
     }
 ]

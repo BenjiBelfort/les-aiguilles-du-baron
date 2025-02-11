@@ -6,10 +6,11 @@ import Navbar from './components/NavBar/navbar';
 import Intro from './components/Intro/intro';
 import Mainimg from './components/MainImg/mainimg';
 import Mainlogo from './components/Mainlogo/mainlogo';
-// import Testimonials from './components/Testimonials/testimonials'
+import Testimonials from './components/Testimonials/testimonials'
 import Gallery from './components/Gallery/gallery';
 import Atelier from './components/Atelier/atelier';
 import Contact from './components/Contact/contact';
+import Social from './components/Social/social';
 import Footer from './components/Footer/footer';
 // import Popup from './components/Popup/popup';
 
@@ -53,8 +54,9 @@ const App = () => {
               <Intro />
               <Gallery />
               <Atelier />
-              {/* <Testimonials /> */}
+              <Testimonials />
               <Contact />
+              <Social />
               <Footer />
               <CookieBanner />
             </>

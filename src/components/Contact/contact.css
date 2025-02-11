@@ -87,42 +87,6 @@
     cursor: pointer;
 }
 
-.links {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.link {
-    margin: 4rem 1rem;
-    object-fit: cover;
-    height: 5rem;
-    width: 5rem;
-}
-
-.tiktok-container {
-    position: relative;
-}
-
-.new-icon {
-    position: absolute;
-    top: 35px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 2rem;
-    width: 2rem;
-    z-index: 2;
-    animation: float 2s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateX(-50%) translateY(0);
-    }
-    50% {
-        transform: translateX(-50%) translateY(-7px);
-    }
-}
-
 .horaires {
     text-align: center;
 }
