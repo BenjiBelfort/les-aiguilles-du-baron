@@ -17,7 +17,7 @@ const Intro = () => {
             <span className='gold-words'>M. Chellovnik</span>, le tatoueur, mettra à profit son expérience pour vous satisfaire dans divers styles : réalisme, semi-réalisme, floral, manga, japonais, trash polka, blackwork, graphique…
             <br />
             <br />
-            Il sera ravis de vous accueillir sur place ou d’échanger avec vous par courriel, par MP sur les réseaux sociaux ou par téléphone (liens en bas de page) pour discuter de <span className='gold-words'>vos projets de tatouage</span>.
+            Il sera ravi de vous accueillir sur place ou d’échanger avec vous par courriel, par MP sur les réseaux sociaux ou par téléphone (liens en bas de page) pour discuter de <span className='gold-words'>vos projets de tatouage</span>.
             <br />
             <br />
             à bientot !
