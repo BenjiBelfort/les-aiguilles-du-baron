@@ -109,6 +109,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.photo-thumbnail:hover {
+    cursor: pointer;
+}
+
+
 .badge {
     position: absolute;
     top: 15px;

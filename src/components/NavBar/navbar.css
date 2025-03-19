@@ -9,7 +9,7 @@
 
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+}
 
 .navbar-container {
     height: 6rem;
@@ -98,6 +98,7 @@ a {
     object-fit: cover;
 }
 
+/* Menu mobile animé : par défaut, caché par translation vers le haut */
 .navMenu {
     position: absolute;
     top: 5rem;
@@ -106,9 +107,28 @@ a {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    height:  fit-content;
+    height: fit-content;
     min-width: 17rem;
     background: rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+    transform: translateY(-20%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.navMenu.activeMob {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* État ouvert : affichage par translation à sa position normale */
+.navMenu.open {
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .ListItem {

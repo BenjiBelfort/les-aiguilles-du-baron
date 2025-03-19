@@ -1,0 +1,107 @@
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .lightbox-image {
+    max-height: 90vh;
+    max-width: 90vw;
+    border-radius: 8px;
+    object-fit: contain; /* L'image reste entièrement visible sans dépasser */
+    display: block;
+  }
+  
+  /* Boutons de navigation et de fermeture positionnés par rapport au viewport */
+  .lightbox-close,
+  .lightbox-prev,
+  .lightbox-next {
+    position: fixed;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1100;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  /* Positionnement des icônes */
+  .lightbox-close {
+    top: 20px;
+    right: 35px;
+  }
+  
+  .lightbox-prev {
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+  }
+  
+  .lightbox-next {
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+  
+  /* Style des images dans les boutons avec filtre drop-shadow */
+  .lightbox-prev img,
+  .lightbox-next img {
+    width: 120px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .lightbox-close img {
+    width: 50px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .lightbox-close img:hover,
+  .lightbox-prev img:hover,
+  .lightbox-next img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.5));
+  }
+  
+  @media (max-width: 900px) {
+    .lightbox-prev,
+    .lightbox-next {
+      top: auto;
+      bottom: 20px;
+      transform: none;
+    }
+  
+    .lightbox-prev {
+      left: 10%;
+    }
+  
+    .lightbox-next {
+      right: 10%;
+    }
+  
+    .lightbox-prev img,
+    .lightbox-next img {
+      width: 80px; /* Réduction de la taille des flèches pour les petits écrans */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .lightbox-close img {
+        width: 40px;
+    }
+
+    .lightbox-close {
+        top: 20px;
+        right: 20px;
+    }
+}
