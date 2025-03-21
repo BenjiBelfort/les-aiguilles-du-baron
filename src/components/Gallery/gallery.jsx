@@ -3,6 +3,7 @@ import CategoryDescription from './categoryDescription';
 import reservedBadge from '../../assets/reza.png';
 import inProgressBadge from '../../assets/en-cours.png';
 import availableBadge from '../../assets/dispo.png';
+import coverBadge from '../../assets/cover.png';
 
 import photosData from '../../data/photos.json';
 import Lightbox from '../Lightbox/Lightbox';
@@ -30,6 +31,10 @@ const badgeMap = {
   available: {
     src: availableBadge,
     alt: "Disponible"
+  },
+  cover: {
+    src: coverBadge,
+    alt: "Cover"
   }
 };
 
