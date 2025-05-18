@@ -24,20 +24,14 @@
     margin: 0 5px;
     padding: 5px 10px;
     background: rgba(0, 0, 0, 0.8);
-
-
     box-shadow: rgba(0, 0, 0, .5) 15px 28px 25px -18px;
-
     border-bottom-left-radius: 15px 255px;
     border-bottom-right-radius: 225px 15px;
     border-top-left-radius: 255px 15px;
     border-top-right-radius: 15px 225px;
     border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-
     border: 0.5px solid #fff;
-
     transition: all 300ms ease-in-out;
-
     color: #fff;
     cursor: pointer;
     font-size: 18px;
@@ -141,12 +135,20 @@
 }
 
 @media screen and (max-width: 1050px) {
+    .photo-thumbnail {
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 850px) {
     .gallery-container {
         grid-template-columns: 1fr;
     }
 }
 
 @media screen and (max-width: 750px) {
+    
     .photo-thumbnail {
         width: calc(100vw - 30px);
         height: 100vw;

@@ -11,6 +11,7 @@
 
 .intro-img {
     width: 30%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 .lien {

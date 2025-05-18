@@ -53,6 +53,9 @@ const Lightbox = ({ photos, currentIndex, onClose }) => {
   // sauf si un zoom à deux doigts est détecté.
   const { handleTouchStart, handleTouchMove, handleTouchEnd } = useSwipe(handleNext, handlePrev, 50);
 
+  const filePath = `/photos/${photos[index].category}/${photos[index].url}`;
+  const isVideo = photos[index].url.toLowerCase().endsWith('.mp4');
+
   return (
     <div className="lightbox-overlay" onClick={onClose}>
       {/* Bouton de fermeture */}
@@ -76,15 +79,32 @@ const Lightbox = ({ photos, currentIndex, onClose }) => {
         <img src={leftArrowIcon} alt="Précédente" />
       </button>
       {/* L'image s'affiche avec une hauteur max de 90% du viewport */}
-      <img 
-        src={photos[index].url} 
-        alt={photos[index].alt} 
-        className="lightbox-image"
+      <div
+        className="lightbox-media-wrapper"
         onClick={(e) => e.stopPropagation()}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
-      />
+      >
+        {isVideo ? (
+          <video
+            src={filePath}
+            className="lightbox-media"
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls={false}
+          />
+        ) : (
+          <img
+            src={filePath}
+            alt={`${photos[index].alt} - tatouage`}
+            className="lightbox-media"
+          />
+        )}
+      </div>
+
       {/* Bouton de navigation suivante */}
       <button
         className="lightbox-next"
@@ -104,6 +124,7 @@ Lightbox.propTypes = {
     PropTypes.shape({
       url: PropTypes.string.isRequired,
       alt: PropTypes.string.isRequired,
+      category: PropTypes.string.isRequired,
     })
   ).isRequired,
   currentIndex: PropTypes.number.isRequired,

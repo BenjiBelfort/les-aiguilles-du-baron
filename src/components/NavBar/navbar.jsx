@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import './navbar.css';
 import contactImg from '../../assets/typewriter.png';
 import burgerMenu from '../../assets/burger-menu.png';
+import crossIcon from '../../assets/cross.png';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -61,16 +62,16 @@ const Navbar = () => {
   return (
     <nav ref={navRef} className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className='navbar-container'>
-        <div
-          className='desktopmenutitle'
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            setShowMenu(false);
-          }}
-        >
-          <h2>Les Aiguilles du Baron</h2>
-          <h1>Atelier de tatouage</h1>
-        </div>
+      <div
+        className={`desktopmenutitle ${scrolled ? 'visible' : 'hidden'}`}
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          setShowMenu(false);
+        }}
+      >
+        <h2>Les Aiguilles du Baron</h2>
+        <h1>Atelier de tatouage</h1>
+      </div>
 
         <div className='desktopmenu'>
           <Link
@@ -140,7 +141,7 @@ const Navbar = () => {
         </button>
 
         <img
-          src={burgerMenu}
+          src={showMenu ? crossIcon : burgerMenu}
           alt="Menu"
           className="mobMenu"
           onClick={() => setShowMenu(!showMenu)}

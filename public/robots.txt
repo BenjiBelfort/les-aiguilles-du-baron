@@ -1,0 +1,4 @@
+Sitemap: https://www.lesaiguillesdubaron.fr/sitemap.xml
+Sitemap: https://www.lesaiguillesdubaron.fr/sitemap-images.xml
+User-agent: *
+Allow: /

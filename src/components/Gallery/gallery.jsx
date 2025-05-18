@@ -11,11 +11,11 @@ import Lightbox from '../Lightbox/Lightbox';
 import './gallery.css';
 
 const categories = [
-  { key: 'realisme', label: 'Réalisme / Semi-réalisme' },
-  { key: 'manga', label: 'Manga / Japonais' },
-  { key: 'graphique', label: 'Sketch / Graphique / Lettrage' },
-  { key: 'trash', label: 'Trash Polka / Pop Culture' },
-  { key: 'floral', label: 'Floral / Fine line' },
+  { key: 'realismeSemiRealisme', label: 'Réalisme / Semi-réalisme' },
+  { key: 'mangaPopCulture', label: 'Manga / Pop Culture' },
+  { key: 'sketchGraphiqueTrashPolka', label: 'Sketch / Graphique / Trash Polka' },
+  { key: 'japonaisAutres', label: 'Japonais / Autres...' },
+  { key: 'floralFineline', label: 'Floral / Fine line' },
   { key: 'atelier', label: "Vie de l'Atelier" }
 ];
 
@@ -98,25 +98,43 @@ const Gallery = () => {
         </div>
 
         <div className="gallery-container">
-          {filteredPhotos.slice(0, visiblePhotosCount).map((photo, idx) => (
-            <div key={photo.id} className="photo-wrapper">
-              {photo.status && badgeMap[photo.status] && (
-                <img
-                  src={badgeMap[photo.status].src}
-                  alt={badgeMap[photo.status].alt}
-                  className="badge"
-                />
-              )}
-              <img
-                src={photo.url}
-                alt={photo.alt}
-                className="photo-thumbnail"
-                loading="lazy"
-                onClick={() => setLightboxIndex(idx)}
-              />
-            </div>
-          ))}
+          {filteredPhotos.slice(0, visiblePhotosCount).map((photo, idx) => {
+            const filePath = `/photos/${photo.category}/${photo.url}`;
+            const isVideo = photo.url.toLowerCase().endsWith('.mp4');
+
+            return (
+              <div key={photo.id} className="photo-wrapper">
+                {photo.status && badgeMap[photo.status] && (
+                  <img
+                    src={badgeMap[photo.status].src}
+                    alt={badgeMap[photo.status].alt}
+                    className="badge"
+                  />
+                )}
+                {isVideo ? (
+                  <video
+                    src={filePath}
+                    className="photo-thumbnail"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    onClick={() => setLightboxIndex(idx)}
+                  />
+                ) : (
+                  <img
+                    src={filePath}
+                    alt={`${photo.alt} - taouage`}
+                    className="photo-thumbnail"
+                    loading="lazy"
+                    onClick={() => setLightboxIndex(idx)}
+                  />
+                )}
+              </div>
+            );
+          })}
         </div>
+
 
         {/* Bouton "Afficher la suite" uniquement dans la vue initiale (TOUS) */}
         {!selectedCategory && visiblePhotosCount < filteredPhotos.length && (

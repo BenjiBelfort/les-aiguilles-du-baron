@@ -37,6 +37,73 @@ h4 {
     
 }
 
+.en-ce-moment {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.en-ce-moment span {
+    font-weight: bold;
+    color: #d4bf79;
+}
+
+.en-ce-moment img {
+    height: 40px;
+    width: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-container img {
+    cursor: pointer;
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 220px;
+    background-color: #f9f5eb; /* or très clair, sans opacité */
+    color: #2e2e2e; /* gris anthracite */
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    z-index: 10;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    font-size: 0.9rem;
+    pointer-events: none;
+    border: 4px solid #d4bf79; /* bordure or pleine */
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #f9f5eb transparent transparent transparent; /* même fond que tooltip */
+    border-top-color: #f9f5eb;
+}
+
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 .inter-item {
     display: flex;
     justify-content: center;
@@ -76,5 +143,11 @@ h4 {
 
     .inter-item img {
         margin: 6rem 0;
+    }
+
+    .en-ce-moment {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }

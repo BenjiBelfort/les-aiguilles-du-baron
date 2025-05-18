@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm run generate-sitemap && npm run generate-sitemap-images",
+    "generate-sitemap": "node generate-sitemap.js",
+    "generate-sitemap-images": "node generate-sitemap-images.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",

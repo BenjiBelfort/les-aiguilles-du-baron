@@ -3,11 +3,11 @@ import { useEffect, useState } from 'react';
 
 
 const categoryDescriptions = {
-    realisme: "Reproduction fidèle d’images souvent tirées de la photographie jouant avec les ombrages représentant des portraits, animaux, paysages ou objets. Le mélange de réalisme et d’éléments stylisés offre la possibilité d’ajouts de touches abstraites ou artistiques créant un équilibre entre précision et imagination pour aboutir au semi-réalisme.",
-    manga: "Inspiré de la bande dessinée japonaise, le style manga reprend les codes de ce vaste univers. Plus traditionnel et inspiré de la mythologie, l’art traditionnel japonais se caractérise par la représentation de motifs emblématiques de cette culture.",
+    realismeSemiRealisme: "Reproduction fidèle d’images souvent tirées de la photographie jouant avec les ombrages représentant des portraits, animaux, paysages ou objets. Le mélange de réalisme et d’éléments stylisés offre la possibilité d’ajouts de touches abstraites ou artistiques créant un équilibre entre précision et imagination pour aboutir au semi-réalisme.",
+    mangaPopCulture: "Inspiré de la bande dessinée japonaise, le style manga reprend les codes de ce vaste univers. Plus traditionnel et inspiré de la mythologie, l’art traditionnel japonais se caractérise par la représentation de motifs emblématiques de cette culture.",
     graphique: "Approche artistique moderne et utilisation de techniques de gravure, de jeux de contraste et d’aplats, donne à ce style la possibilité de jouer avec la composition visuelle donnant souvent l’apparence de croquis ou œuvres d’art contemporaine.",
-    trash: "Le trash polka est un type de tatouage qui combine des éléments réalistes et abstraits. Principalement  en rouge et noir, ce style se distingue par des motifs dynamiques qui peuvent inclure des portraits, des éléments graphiques, des lettres et des textures variées. Le style Pop Culture très proche du trash polka sans éléments réalistes, inspirés de références culturelles et artistiques pouvant intégrer de la couleur",
-    floral: "La symbolique des fleurs ou d'autres thèmes, mêlée à une composition harmonieuse, met en avant l’élégance et la finesse en jouant avec les différents styles visuels.",
+    sketchGraphiqueTrashPolka: "Le trash polka est un type de tatouage qui combine des éléments réalistes et abstraits. Principalement  en rouge et noir, ce style se distingue par des motifs dynamiques qui peuvent inclure des portraits, des éléments graphiques, des lettres et des textures variées. Le style Pop Culture très proche du trash polka sans éléments réalistes, inspirés de références culturelles et artistiques pouvant intégrer de la couleur",
+    floralFineline: "La symbolique des fleurs ou d'autres thèmes, mêlée à une composition harmonieuse, met en avant l’élégance et la finesse en jouant avec les différents styles visuels.",
     atelier: "Rubrique dédiée à la vie courante de l'Atelier et ses diverses activités : expo d'art, brocante, échange et convivialité",
     TOUS: "",
 };

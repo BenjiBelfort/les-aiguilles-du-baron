@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CookieBanner from './components/CookieBanner/CookieBanner';
 import CookiePolicy from './components/CookiePolicy/CookiePolicy';
@@ -15,6 +15,8 @@ import Footer from './components/Footer/footer';
 // import Popup from './components/Popup/popup';
 
 const App = () => {
+  const [hideLogo, setHideLogo] = useState(false);
+
   useEffect(() => {
     const cookieConsent = localStorage.getItem('cookieConsent');
     if (cookieConsent === 'true') {
@@ -39,6 +41,14 @@ const App = () => {
     } else {
       console.log("Google Analytics n'est pas activé");
     }
+
+    const handleScroll = () => {
+      setHideLogo(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+
   }, []);
 
   return (
@@ -50,7 +60,7 @@ const App = () => {
               {/* <Popup /> */}
               <Navbar />
               <Mainimg />
-              <Mainlogo />
+              <Mainlogo hidden={hideLogo} />
               <Intro />
               <Gallery />
               <Atelier />

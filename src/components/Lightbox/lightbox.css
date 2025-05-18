@@ -12,12 +12,20 @@
     backdrop-filter: blur(10px);
   }
   
-  .lightbox-image {
+  .lightbox-media {
     max-height: 90vh;
-    max-width: 90vw;
-    border-radius: 8px;
-    object-fit: contain; /* L'image reste entièrement visible sans dépasser */
+    max-width: 100%;
+    object-fit: contain;
     display: block;
+    margin: 0 auto;
+  }
+  
+  .lightbox-media-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
   
   /* Boutons de navigation et de fermeture positionnés par rapport au viewport */
