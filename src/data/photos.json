@@ -44,142 +44,177 @@
   {
     "id": 106,
     "category": "realismeSemiRealisme",
+    "url": "michel-anges-mains.webp",
+    "alt": "mains de Michel-Anges",
+    "status": ""
+  },
+  {
+    "id": 107,
+    "category": "realismeSemiRealisme",
     "url": "realisme-bonzai.webp",
     "alt": "tatouage d'un bonzai sur le bras",
     "status": ""
   },
   {
-    "id": 107,
+    "id": 108,
     "category": "realismeSemiRealisme",
     "url": "realisme-god.webp",
     "alt": "tatouage d'un dieu sur l'épaule",
     "status": ""
   },
   {
-    "id": 108,
+    "id": 109,
     "category": "realismeSemiRealisme",
     "url": "realisme-avion.webp",
     "alt": "tatouage d'un avion sur l'épaule",
     "status": ""
   },
   {
-    "id": 109,
+    "id": 110,
     "category": "realismeSemiRealisme",
     "url": "realisme-bobine-film.webp",
     "alt": "tatouage d'une bobine de film sur l'épaule",
     "status": ""
   },
   {
-    "id": 110,
+    "id": 111,
     "category": "realismeSemiRealisme",
     "url": "realisme-elephant.webp",
     "alt": "tatouage elephant sur l'omoplate",
     "status": "cover"
   },
   {
-    "id": 111,
+    "id": 112,
     "category": "realismeSemiRealisme",
     "url": "realisme-gorille.webp",
     "alt": "tatouage d'un gorille sur l'épaule",
     "status": ""
   },
   {
-    "id": 112,
+    "id": 113,
     "category": "realismeSemiRealisme",
     "url": "realisme-spartiate.webp",
     "alt": "tatouage d'un spartiate et de Poséidon",
     "status": "in_progress"
   },
   {
-    "id": 113,
+    "id": 114,
     "category": "realismeSemiRealisme",
     "url": "poseidon2.webp",
     "alt": "tatouage Poseidon sur le pec",
     "status": "in_progress"
   },
   {
-    "id": 114,
+    "id": 115,
     "category": "realismeSemiRealisme",
     "url": "chat-aile.webp",
     "alt": "chat ailé tatoué sur la poitrine",
     "status": ""
   },
   {
-    "id": 115,
+    "id": 116,
     "category": "realismeSemiRealisme",
     "url": "realisme-labyrinthe.webp",
     "alt": "tatouage d'un labyrinthe sur la cuisse",
     "status": ""
   },
   {
-    "id": 116,
+    "id": 117,
     "category": "realismeSemiRealisme",
     "url": "realisme-Samuel-L-Jackson.webp",
     "alt": "tatouage réalisme de Samuel L. Jackson",
     "status": ""
   },
   {
-    "id": 117,
+    "id": 118,
     "category": "realismeSemiRealisme",
     "url": "realisme-visage.webp",
     "alt": "tatouage visage d'enfant",
     "status": ""
   },
   {
-    "id": 118,
+    "id": 119,
     "category": "realismeSemiRealisme",
     "url": "ours.webp",
     "alt": "tatouage d'un ours sur l'épaule d'un homme",
     "status": ""
   },
   {
-    "id": 119,
+    "id": 120,
     "category": "realismeSemiRealisme",
     "url": "realisme-bonnet.webp",
     "alt": "tatouage d'un bonnet",
     "status": ""
   },
   {
-    "id": 120,
+    "id": 121,
     "category": "realismeSemiRealisme",
     "url": "realisme-Hedwige.webp",
     "alt": "tatouage de Hedwige la chouette d'Harry Potter",
     "status": ""
   },
   {
-    "id": 121,
+    "id": 122,
     "category": "realismeSemiRealisme",
     "url": "realisme-Johnny-Hallyday.webp",
     "alt": "tatouage Johnny Hallyday sur un mollet",
     "status": ""
   },
   {
-    "id": 122,
+    "id": 123,
     "category": "realismeSemiRealisme",
     "url": "realisme-croix1.webp",
     "alt": "tatouage d'une croix sur le dos",
     "status": ""
   },
   {
-    "id": 123,
+    "id": 124,
     "category": "realismeSemiRealisme",
     "url": "viking.webp",
     "alt": "Viking",
-    "status": "reserved"
+    "status": ""
   },
   {
-    "id": 124,
+    "id": 125,
     "category": "realismeSemiRealisme",
     "url": "santa-muerte.webp",
     "alt": "tatouage santa muerte calaveras style mexicain",
     "status": ""
   },
   {
-    "id": 125,
+    "id": 126,
     "category": "realismeSemiRealisme",
     "url": "gambling.webp",
     "alt": "personnage Gambling",
     "status": "available"
+  },
+  {
+    "id": 127,
+    "category": "realismeSemiRealisme",
+    "url": "RC-Lens.webp",
+    "alt": "Ecusson RC Lens",
+    "status": ""
+  },
+  {
+    "id": 128,
+    "category": "realismeSemiRealisme",
+    "url": "Scorpion_rose.webp",
+    "alt": "Scorpion rose",
+    "status": ""
+  },
+  {
+    "id": 129,
+    "category": "realismeSemiRealisme",
+    "url": "Eddy-iron-maiden.webp",
+    "alt": "Eddy iron maiden",
+    "status": "In_progress"
+  },
+  {
+    "id": 130,
+    "category": "realismeSemiRealisme",
+    "url": "Medusa.webp",
+    "alt": "Medusa",
+    "status": "in_progress"
   },
   {
     "id": 200,
@@ -256,7 +291,7 @@
     "category": "mangaPopCulture",
     "url": "deadpool-et-wolverine.webp",
     "alt": "Deadpool et Wolverine 2",
-    "status": "in_progress"
+    "status": ""
   },
   {
     "id": 211,
@@ -270,6 +305,27 @@
     "category": "mangaPopCulture",
     "url": "I_am_Groot.webp",
     "alt": "Je s'appelle Groot tatoué sur le bras",
+    "status": ""
+  },
+  {
+    "id": 213,
+    "category": "mangaPopCulture",
+    "url": "Kitsune.webp",
+    "alt": "Kitsune",
+    "status": ""
+  },
+  {
+    "id": 214,
+    "category": "mangaPopCulture",
+    "url": "Kitty-gothique.webp",
+    "alt": "Kitty gothique",
+    "status": ""
+  },
+  {
+    "id": 215,
+    "category": "mangaPopCulture",
+    "url": "carpe-koi-lycoris-epaule.webp",
+    "alt": "carpe koi lycoris epaule",
     "status": ""
   },
   {
@@ -290,145 +346,173 @@
     "id": 302,
     "category": "sketchGraphiqueTrashPolka",
     "url": "coquelicots-tete-de-mort.webp",
-    "alt": "Coquelicots tete de mort hexagrid trash-polka",
-    "status": "reserved"
+    "alt": "Coquelicots tete de mort hexagrid trash-polka réel",
+    "status": ""
   },
   {
     "id": 303,
+    "category": "sketchGraphiqueTrashPolka",
+    "url": "BijouAragone.webp",
+    "alt": "Bijou Aragone",
+    "status": ""
+  },
+  {
+    "id": 304,
+    "category": "sketchGraphiqueTrashPolka",
+    "url": "tattoo_coquelicots.webp",
+    "alt": "tattoo coquelicots sur l'épaule",
+    "status": "in_progress"
+  },
+  {
+    "id": 305,
     "category": "sketchGraphiqueTrashPolka",
     "url": "robot_chappy.webp",
     "alt": "robot chappy tatoué sur un mollet photo en sketch",
     "status": ""
   },
   {
-    "id": 304,
+    "id": 306,
     "category": "sketchGraphiqueTrashPolka",
     "url": "poulpe.webp",
     "alt": "poulpe tatoué sur la cheville en sketch",
     "status": ""
   },
   {
-    "id": 305,
+    "id": 307,
     "category": "sketchGraphiqueTrashPolka",
     "url": "robot2.webp",
     "alt": "robot tatoué sur un mollet photo en couleur",
     "status": ""
   },
   {
-    "id": 306,
+    "id": 308,
     "category": "sketchGraphiqueTrashPolka",
     "url": "dessin-crabe.webp",
     "alt": "dessin tablette d'un crabe",
     "status": "available"
   },
   {
-    "id": 307,
+    "id": 309,
     "category": "sketchGraphiqueTrashPolka",
     "url": "pattern.webp",
     "alt": "pattern tatoué sur le mollet au dessus de la cheville",
     "status": ""
   },
   {
-    "id": 308,
+    "id": 310,
     "category": "sketchGraphiqueTrashPolka",
     "url": "trois-singes.webp",
     "alt": "Trois singes trash",
     "status": ""
   },
   {
-    "id": 309,
+    "id": 311,
     "category": "sketchGraphiqueTrashPolka",
     "url": "dessin-skateur.webp",
     "alt": "dessin skateur en sketch",
     "status": "available"
   },
   {
-    "id": 310,
+    "id": 312,
     "category": "sketchGraphiqueTrashPolka",
     "url": "graphique-triangle-canif.webp",
     "alt": "mollet tatoué Corse compas et canif",
     "status": "in_progress"
   },
   {
-    "id": 311,
+    "id": 313,
     "category": "sketchGraphiqueTrashPolka",
     "url": "escargot.webp",
     "alt": "Tatouage escargot dos femme",
     "status": ""
   },
   {
-    "id": 312,
+    "id": 314,
     "category": "sketchGraphiqueTrashPolka",
     "url": "corbeau.webp",
     "alt": "corbeau",
     "status": ""
   },
   {
-    "id": 313,
+    "id": 315,
     "category": "sketchGraphiqueTrashPolka",
     "url": "corbeau-1.webp",
     "alt": "crane corbeau 1",
     "status": "available"
   },
   {
-    "id": 314,
+    "id": 316,
     "category": "sketchGraphiqueTrashPolka",
     "url": "corbeau-3.webp",
     "alt": "crane corbeau 3",
     "status": "available"
   },
   {
-    "id": 315,
+    "id": 317,
     "category": "sketchGraphiqueTrashPolka",
     "url": "graphique-insecte.webp",
     "alt": "dessin d'un insecte",
     "status": "available"
   },
   {
-    "id": 316,
+    "id": 318,
     "category": "sketchGraphiqueTrashPolka",
     "url": "coeur-biomeca.webp",
     "alt": "coeur biomeca",
     "status": "available"
   },
   {
+    "id": 319,
+    "category": "sketchGraphiqueTrashPolka",
+    "url": "cartes-mollet.webp",
+    "alt": "cartes mollet",
+    "status": ""
+  },
+  {
+    "id": 320,
+    "category": "realismeSemiRealisme",
+    "url": "abeille-ruche.webp",
+    "alt": "Abeille ruche",
+    "status": ""
+  },
+  {
     "id": 400,
-    "category": "japonaisAutres",
+    "category": "traditionnel",
     "url": "carpes_koi_couleur.webp",
     "alt": "tatouage style japonais yakusa carpe koï couleur",
     "status": "cover"
   },
   {
     "id": 401,
-    "category": "japonaisAutres",
+    "category": "traditionnel",
     "url": "vague_kanagawa.webp",
     "alt": "Great Wave d'Hokusai tatouée sur un mollet",
     "status": ""
   },
   {
     "id": 402,
-    "category": "japonaisAutres",
+    "category": "traditionnel",
     "url": "floral_vagues_yakusa.webp",
     "alt": "tatouage style yakusa sur l'épaule",
     "status": "cover"
   },
   {
     "id": 403,
-    "category": "japonaisAutres",
+    "category": "traditionnel",
     "url": "panthere_old_school.webp",
     "alt": "tatouage panthere poignard old school",
     "status": ""
   },
   {
     "id": 404,
-    "category": "japonaisAutres",
+    "category": "traditionnel",
     "url": "tortue-couleur.webp",
-    "alt": "totue couleur en maori",
+    "alt": "tortue couleur en maori",
     "status": ""
   },
   {
     "id": 405,
-    "category": "japonaisAutres",
+    "category": "traditionnel",
     "url": "lettragewest_coast_francis.webp",
     "alt": "bras tatoué avec le prénom Francis west coast",
     "status": ""
@@ -450,36 +534,64 @@
   {
     "id": 503,
     "category": "floralFineline",
+    "url": "floral-mollet.webp",
+    "alt": "Floral tattoo mollet",
+    "status": ""
+  },
+  {
+    "id": 504,
+    "category": "floralFineline",
     "url": "floral-epaule1.webp",
     "alt": "fleur tatouée sur l'épaule d'une femme",
     "status": ""
   },
   {
-    "id": 504,
+    "id": 505,
     "category": "floralFineline",
     "url": "floral-epaule2.webp",
     "alt": "rose tatouée sur l'épaule d'une femme",
     "status": ""
   },
   {
-    "id": 505,
+    "id": 506,
     "category": "floralFineline",
-    "url": "dessin-dragon.webp",
-    "alt": "dessin d'un dragon entouré de fleurs",
-    "status": "reserved"
+    "url": "heavenly-dos.webp",
+    "alt": "tatouage dos Heavenly",
+    "status": ""
   },
   {
-    "id": 506,
+    "id": 507,
+    "category": "floralFineline",
+    "url": "carpediem-fine.webp",
+    "alt": "Carpe Diem Fine Line",
+    "status": ""
+  },
+  {
+    "id": 508,
     "category": "floralFineline",
     "url": "mains-fine-line.webp",
     "alt": "Mains fine line",
     "status": ""
   },
   {
-    "id": 507,
+    "id": 509,
     "category": "floralFineline",
     "url": "masques-venitiens.webp",
     "alt": "masques venitiens en fineline",
+    "status": ""
+  },
+  {
+    "id": 510,
+    "category": "floralFineline",
+    "url": "Boussole-viking.webp",
+    "alt": "Boussole viking",
+    "status": ""
+  },
+  {
+    "id": 511,
+    "category": "floralFineline",
+    "url": "plume-ines.webp",
+    "alt": "plume ines",
     "status": ""
   },
   {
@@ -564,6 +676,13 @@
     "category": "atelier",
     "url": "atelier-finnegans.webp",
     "alt": "soirée tatoo au finnegans",
+    "status": ""
+  },
+  {
+    "id": 613,
+    "category": "atelier",
+    "url": "sapins-flo-art.webp",
+    "alt": "Flo Art tableau sapins",
     "status": ""
   }
 ]

@@ -100,15 +100,19 @@
   
 .testimonial-text {
   padding: 12px;
-  font-size: 1.6rem;
   text-align: center;
   
   font-family: "Courier Prime", monospace;
   margin-bottom: 0.5rem;
   color: black;
   line-height: 1.1;
-
 }
+
+.font-xl { font-size: 2rem; }
+.font-lg { font-size: 1.75rem; }
+.font-md { font-size: 1.5rem; }
+.font-sm { font-size: 1.1rem; }
+
 
 .testimonial-signature {
   font-size: 1.4rem;
@@ -157,8 +161,12 @@
 @media screen and (max-width:1200px) {
   .testimonial-text {
     padding: 10px;
-    font-size: 1.5rem;
   }
+
+  .font-xl { font-size: 1.6rem; }
+  .font-lg { font-size: 1.4rem; }
+  .font-md { font-size: 1.2rem; }
+  .font-sm { font-size: 1rem; }
 
   .frame-container {
     width: 75%;
@@ -176,7 +184,6 @@
 @media screen and (max-width:1100px) {
   .testimonial-text {
     padding: 8px;
-    font-size: 1.4rem;
   }
 
   .testimonial-signature {
@@ -191,7 +198,6 @@
 @media screen and (max-width:1050px) {
   .testimonial-text {
     padding: 6px;
-    font-size: 1.3rem;
   }
 
   .testimonial-signature {
@@ -240,10 +246,6 @@
     width: 100%;
   }
 
-  .testimonial-text {
-    font-size: 1.2rem;
-  }
-
   .testimonial-signature {
     font-size: 1.1rem;
   }
@@ -277,9 +279,10 @@
 }
 
 @media screen and (max-width:450px) {
-  .testimonial-text {
-    font-size: 1.1rem;
-  }
+  .font-xl { font-size: 1.6rem; }
+  .font-lg { font-size: 1.4rem; }
+  .font-md { font-size: 1.1rem; }
+  .font-sm { font-size: 0.9rem; }
 
   .testimonial-signature {
     font-size: 1rem;
@@ -291,9 +294,10 @@
 }
 
 @media screen and (max-width:375px) {
-  .testimonial-text {
-    font-size: 1rem;
-  }
+  .font-xl { font-size: 1.4rem; }
+  .font-lg { font-size: 1.2rem; }
+  .font-md { font-size: 1rem; }
+  .font-sm { font-size: 0.8rem; }
 
   .testimonial-signature {
     font-size: 0.9rem;

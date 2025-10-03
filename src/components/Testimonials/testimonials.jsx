@@ -77,6 +77,14 @@ const Testimonials = () => {
     return () => clearTimers();
   }, [startInterval, clearTimers]);
 
+  function getFontSizeClass(text) {
+      const len = text.length;
+      if (len < 100) return 'font-xl';
+      if (len < 200) return 'font-lg';
+      if (len < 300) return 'font-md';
+      return 'font-sm';
+    }
+
   return (
     <section id="Testimonials">
       <h3>Témoignages</h3>
@@ -95,7 +103,9 @@ const Testimonials = () => {
                 <div key={index} className={`testimonial ${index === currentIndex ? "actif" : ""}`}>
 
                   <div className="text-container">
-                    <p className="testimonial-text">{testimonial.text}</p>
+                    <p className={`testimonial-text ${getFontSizeClass(testimonial.text)}`}>
+                      {testimonial.text}
+                    </p>
                   </div>
                   <div className="frame_footer">
                     <p className="testimonial-signature">{testimonial.signature}</p>

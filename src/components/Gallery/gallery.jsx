@@ -14,7 +14,7 @@ const categories = [
   { key: 'realismeSemiRealisme', label: 'Réalisme / Semi-réalisme' },
   { key: 'mangaPopCulture', label: 'Manga / Pop Culture' },
   { key: 'sketchGraphiqueTrashPolka', label: 'Sketch / Graphique / Trash Polka' },
-  { key: 'japonaisAutres', label: 'Japonais / Autres...' },
+  { key: 'traditionnel', label: 'Traditionnel' },
   { key: 'floralFineline', label: 'Floral / Fine line' },
   { key: 'atelier', label: "Vie de l'Atelier" }
 ];

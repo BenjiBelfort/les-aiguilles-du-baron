@@ -20,3 +20,8 @@ Utiliser "npm run deploy" pour appliquer les MAJ sur le site test sur GitHub (ma
 "git add ."
 "git commit -m "message commit""
 "git push -u origin main"
+
+
+Pour l'architecture du projet :
+tree -a -L 5 -I "node_modules|.git|dist|.vercel|.astro|.vscode|.DS_Store"
+dans le terminal (régler L3 L4 L5 pour la profondeur)

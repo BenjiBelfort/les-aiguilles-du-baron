@@ -1,6 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import './popup.css';
-import popupVideo from '../../assets/video-BA.mp4';
+
+// import de la vidéo ou de l'image (popupImage) à afficher dans le popup
+import popupVideo from '/videos/tattoo-show-Axone.mp4';
+// import popupImage from '/(dossier à définir))/popup-image.png';
+// Si vous utilisez une image à la place de la vidéo
 
 const Popup = () => {
   const [showPopup, setShowPopup] = useState(false);
