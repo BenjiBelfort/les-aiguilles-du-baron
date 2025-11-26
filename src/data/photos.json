@@ -322,13 +322,6 @@
     "status": ""
   },
   {
-    "id": 215,
-    "category": "mangaPopCulture",
-    "url": "carpe-koi-lycoris-epaule.webp",
-    "alt": "carpe koi lycoris epaule",
-    "status": ""
-  },
-  {
     "id": 300,
     "category": "sketchGraphiqueTrashPolka",
     "url": "femme-erotica.webp",
@@ -373,103 +366,110 @@
   {
     "id": 306,
     "category": "sketchGraphiqueTrashPolka",
+    "url": "boussole-fleches.webp",
+    "alt": "boussole fleches",
+    "status": ""
+  },
+  {
+    "id": 307,
+    "category": "sketchGraphiqueTrashPolka",
     "url": "poulpe.webp",
     "alt": "poulpe tatoué sur la cheville en sketch",
     "status": ""
   },
   {
-    "id": 307,
+    "id": 308,
     "category": "sketchGraphiqueTrashPolka",
     "url": "robot2.webp",
     "alt": "robot tatoué sur un mollet photo en couleur",
     "status": ""
   },
   {
-    "id": 308,
+    "id": 309,
     "category": "sketchGraphiqueTrashPolka",
     "url": "dessin-crabe.webp",
     "alt": "dessin tablette d'un crabe",
     "status": "available"
   },
   {
-    "id": 309,
+    "id": 310,
     "category": "sketchGraphiqueTrashPolka",
     "url": "pattern.webp",
     "alt": "pattern tatoué sur le mollet au dessus de la cheville",
     "status": ""
   },
   {
-    "id": 310,
+    "id": 311,
     "category": "sketchGraphiqueTrashPolka",
     "url": "trois-singes.webp",
     "alt": "Trois singes trash",
     "status": ""
   },
   {
-    "id": 311,
+    "id": 312,
     "category": "sketchGraphiqueTrashPolka",
     "url": "dessin-skateur.webp",
     "alt": "dessin skateur en sketch",
     "status": "available"
   },
   {
-    "id": 312,
+    "id": 313,
     "category": "sketchGraphiqueTrashPolka",
     "url": "graphique-triangle-canif.webp",
     "alt": "mollet tatoué Corse compas et canif",
     "status": "in_progress"
   },
   {
-    "id": 313,
+    "id": 314,
     "category": "sketchGraphiqueTrashPolka",
     "url": "escargot.webp",
     "alt": "Tatouage escargot dos femme",
     "status": ""
   },
   {
-    "id": 314,
+    "id": 315,
     "category": "sketchGraphiqueTrashPolka",
     "url": "corbeau.webp",
     "alt": "corbeau",
     "status": ""
   },
   {
-    "id": 315,
+    "id": 316,
     "category": "sketchGraphiqueTrashPolka",
     "url": "corbeau-1.webp",
     "alt": "crane corbeau 1",
     "status": "available"
   },
   {
-    "id": 316,
+    "id": 317,
     "category": "sketchGraphiqueTrashPolka",
     "url": "corbeau-3.webp",
     "alt": "crane corbeau 3",
     "status": "available"
   },
   {
-    "id": 317,
+    "id": 318,
     "category": "sketchGraphiqueTrashPolka",
     "url": "graphique-insecte.webp",
     "alt": "dessin d'un insecte",
     "status": "available"
   },
   {
-    "id": 318,
+    "id": 319,
     "category": "sketchGraphiqueTrashPolka",
     "url": "coeur-biomeca.webp",
     "alt": "coeur biomeca",
     "status": "available"
   },
   {
-    "id": 319,
+    "id": 320,
     "category": "sketchGraphiqueTrashPolka",
     "url": "cartes-mollet.webp",
     "alt": "cartes mollet",
     "status": ""
   },
   {
-    "id": 320,
+    "id": 321,
     "category": "realismeSemiRealisme",
     "url": "abeille-ruche.webp",
     "alt": "Abeille ruche",
@@ -518,6 +518,13 @@
     "status": ""
   },
   {
+    "id": 406,
+    "category": "traditionnel",
+    "url": "carpe-koi-lycoris-epaule.webp",
+    "alt": "carpe koi lycoris epaule",
+    "status": ""
+  },
+  {
     "id": 501,
     "category": "floralFineline",
     "url": "floral-bras.webp",
@@ -527,68 +534,82 @@
   {
     "id": 502,
     "category": "floralFineline",
+    "url": "floral-hellfest.webp",
+    "alt": "floral hellfest",
+    "status": ""
+  },
+  {
+    "id": 503,
+    "category": "floralFineline",
+    "url": "floral-tigre.mp4",
+    "alt": "floral tigres vidéo",
+    "status": "cover"
+  },
+  {
+    "id": 504,
+    "category": "floralFineline",
     "url": "floral-dos1.webp",
     "alt": "fleur tatouée sur le dos d'une femme",
     "status": ""
   },
   {
-    "id": 503,
+    "id": 505,
     "category": "floralFineline",
     "url": "floral-mollet.webp",
     "alt": "Floral tattoo mollet",
     "status": ""
   },
   {
-    "id": 504,
+    "id": 506,
     "category": "floralFineline",
     "url": "floral-epaule1.webp",
     "alt": "fleur tatouée sur l'épaule d'une femme",
     "status": ""
   },
   {
-    "id": 505,
+    "id": 507,
     "category": "floralFineline",
     "url": "floral-epaule2.webp",
     "alt": "rose tatouée sur l'épaule d'une femme",
     "status": ""
   },
   {
-    "id": 506,
+    "id": 508,
     "category": "floralFineline",
     "url": "heavenly-dos.webp",
     "alt": "tatouage dos Heavenly",
     "status": ""
   },
   {
-    "id": 507,
+    "id": 509,
     "category": "floralFineline",
     "url": "carpediem-fine.webp",
     "alt": "Carpe Diem Fine Line",
     "status": ""
   },
   {
-    "id": 508,
+    "id": 510,
     "category": "floralFineline",
     "url": "mains-fine-line.webp",
     "alt": "Mains fine line",
     "status": ""
   },
   {
-    "id": 509,
+    "id": 511,
     "category": "floralFineline",
     "url": "masques-venitiens.webp",
     "alt": "masques venitiens en fineline",
     "status": ""
   },
   {
-    "id": 510,
+    "id": 512,
     "category": "floralFineline",
     "url": "Boussole-viking.webp",
     "alt": "Boussole viking",
     "status": ""
   },
   {
-    "id": 511,
+    "id": 513,
     "category": "floralFineline",
     "url": "plume-ines.webp",
     "alt": "plume ines",
@@ -625,61 +646,82 @@
   {
     "id": 605,
     "category": "atelier",
-    "url": "tableau-ana-dinosaure.webp",
-    "alt": "Tableau dinosaure Ana",
+    "url": "axone-tattoo-stand.webp",
+    "alt": "Stand au tattoo show à l'Axone 2025",
     "status": ""
   },
   {
     "id": 606,
+    "category": "atelier",
+    "url": "place-abattoir-tattoo-jp.webp",
+    "alt": "Place de l'abattoir tattoo shop",
+    "status": ""
+  },
+  {
+    "id": 607,
+    "category": "atelier",
+    "url": "seance-emilie.webp",
+    "alt": "seance Émilie tattoo Hellfest cuisse",
+    "status": ""
+  },
+  {
+    "id": 608,
+    "category": "atelier",
+    "url": "flyer-axone-tattoo-show-2025.webp",
+    "alt": "Flyer Axone Tattoo Show 2025",
+    "status": ""
+  },
+  {
+    "id": 609,
     "category": "atelier",
     "url": "tableau-ana-peril-jeune.webp",
     "alt": "Tableau ana perill jeune",
     "status": ""
   },
   {
-    "id": 607,
+    "id": 610,
     "category": "atelier",
     "url": "atelier-terrasse.webp",
     "alt": "Terrasse de l'atelier",
     "status": ""
   },
   {
-    "id": 608,
+    "id": 611,
     "category": "atelier",
     "url": "siege-de-tatouage.webp",
     "alt": "Siege de tatouage",
     "status": ""
   },
   {
-    "id": 609,
+    "id": 612,
     "category": "atelier",
     "url": "atelier-darts.webp",
     "alt": "cible de flechettes",
     "status": ""
   },
   {
-    "id": 610,
+    "id": 613,
     "category": "atelier",
     "url": "atelier-place-abattoir.webp",
     "alt": "place de l'abattoir et mannequin",
     "status": ""
   },
   {
-    "id": 611,
+    "id": 614,
     "category": "atelier",
     "url": "sourire-du-tatoueur.webp",
     "alt": "Sourire du tatoueur",
     "status": ""
   },
   {
-    "id": 612,
+    "id": 615,
     "category": "atelier",
     "url": "atelier-finnegans.webp",
     "alt": "soirée tatoo au finnegans",
     "status": ""
   },
   {
-    "id": 613,
+    "id": 616,
     "category": "atelier",
     "url": "sapins-flo-art.webp",
     "alt": "Flo Art tableau sapins",

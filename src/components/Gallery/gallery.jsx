@@ -15,7 +15,7 @@ const categories = [
   { key: 'mangaPopCulture', label: 'Manga / Pop Culture' },
   { key: 'sketchGraphiqueTrashPolka', label: 'Sketch / Graphique / Trash Polka' },
   { key: 'traditionnel', label: 'Traditionnel' },
-  { key: 'floralFineline', label: 'Floral / Fine line' },
+  { key: 'floralFineline', label: 'Floral / Fine line / Lettrage' },
   { key: 'atelier', label: "Vie de l'Atelier" }
 ];
 
